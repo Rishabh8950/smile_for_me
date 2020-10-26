@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Adminlogin">
+
+
+    <ImageView
+
+        android:id="@+id/imageadmin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/adminn"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/adminlogintext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adminlogin"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        />
+
+    <EditText
+        android:id="@+id/adminloginprompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/adminlogintext"
+
+
+
+        />
+    <TextView
+        android:id="@+id/adminloginpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/adminpwd"
+        android:layout_below="@id/adminloginprompt"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+
+        />
+    <EditText
+        android:id="@+id/adminpwdprompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="textPassword"
+        android:layout_below="@id/adminloginpwd"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/adminpwdprompt"
+        android:layout_centerInParent="true"
+
+
+        android:layout_marginTop="30dp"
+        android:text="@string/adminloginbutton" />
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">betterworld</string>
+    <string name="buttondon">DONOR</string>
+    <string name="buttonngo">NGO</string>
+    <string name="buttonrec">RECIPIENT</string>
+    <string name="buttonadmin">ADMIN</string>
+    <string name="Welcome">WELCOME TO THE BETTER WORLD!</string>
+    <string name="adminlogin">USERNAME</string>
+    <string name="adminpwd">PASSWORD</string>
+    <string name="adminloginbutton">ENTER</string>
+
+
+</resources>

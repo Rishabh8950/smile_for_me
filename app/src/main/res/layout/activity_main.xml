@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+
+        
+        app:srcCompat="@drawable/give" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="@string/Welcome"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        android:background="#D3D3D3"
+
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonadmin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        />
+    <Button
+        android:id="@+id/buttonrec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonrec"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        />
+    <Button
+        android:id="@+id/buttonngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonngo"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/buttonadmin"
+
+
+
+        />
+    <Button
+        android:id="@+id/buttondon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttondon"
+        android:layout_above="@+id/buttonrec"
+
+
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>
