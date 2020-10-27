@@ -1,6 +1,6 @@
-package com.example.betterworld.data;
+package com.example.smileforme.data;
 
-import com.example.betterworld.data.model.LoggedInUser;
+import com.example.smileforme.data.model.LoggedInUser;
 
 /**
  * Class that requests authentication and user information from the remote data source and

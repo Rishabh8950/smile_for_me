@@ -1,14 +1,14 @@
-package com.example.betterworld;
+package com.example.smileforme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Adminlogin extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_adminlogin);
+        setContentView(R.layout.activity_main);
     }
 }

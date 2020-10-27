@@ -1,4 +1,4 @@
-package com.example.betterworld;
+package com.example.smileforme;
 
 import org.junit.Test;
 

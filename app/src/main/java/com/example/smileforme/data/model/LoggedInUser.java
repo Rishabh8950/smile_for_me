@@ -1,4 +1,4 @@
-package com.example.betterworld.data.model;
+package com.example.smileforme.data.model;
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

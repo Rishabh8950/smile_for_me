@@ -13,66 +13,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-
-        
         app:srcCompat="@drawable/give" />
 
-    <TextView
-
+    <Button
+        android:id="@+id/buttondon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="cursive"
-        android:text="@string/Welcome"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        android:background="#D3D3D3"
+        android:layout_above="@+id/buttonrec"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="23dp"
+        android:background="#FFFFFF"
+        android:text="@string/buttondon"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/buttonrec" />
 
+    <Button
+        android:id="@+id/buttonrec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:text="@string/buttonrec"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/buttondon" />
 
-        android:textStyle="bold" />
+    <Button
+        android:id="@+id/buttonngo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonadmin"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="21dp"
+        android:background="#FFFFFF"
+        android:text="@string/buttonngo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/buttonadmin" />
 
     <Button
         android:id="@+id/buttonadmin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="11dp"
+        android:background="#FFFFFF"
         android:text="@string/buttonadmin"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-
-        />
-    <Button
-        android:id="@+id/buttonrec"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/buttonrec"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        />
-    <Button
-        android:id="@+id/buttonngo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/buttonngo"
-        android:layout_alignParentRight="true"
-        android:layout_above="@+id/buttonadmin"
-
-
-
-        />
-    <Button
-        android:id="@+id/buttondon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/buttondon"
-        android:layout_above="@+id/buttonrec"
-
-
-        />
-
-
-
-
-
-
-
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/buttonngo" />
 
 </RelativeLayout>

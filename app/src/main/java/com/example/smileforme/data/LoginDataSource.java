@@ -1,6 +1,6 @@
-package com.example.betterworld.data;
+package com.example.smileforme.data;
 
-import com.example.betterworld.data.model.LoggedInUser;
+import com.example.smileforme.data.model.LoggedInUser;
 
 import java.io.IOException;
 
