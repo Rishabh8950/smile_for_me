@@ -7,9 +7,9 @@
     <string name="btnrecipient">RECIPIENT</string>
     <string name="btnadmin">ADMIN</string>
 
-    <string name="uname">Username</string>
+    <string name="uname">USERNAME</string>
     <string name="namehint">Email/Mobile No.</string>
-    <string name="password">Password</string>
+    <string name="password">PASSWORD</string>
     <string name="loginbtn">LOGIN</string>
     <string name="otpbox">Login with OTP</string>
     <string name="newdonorlogin">New Donor?</string>

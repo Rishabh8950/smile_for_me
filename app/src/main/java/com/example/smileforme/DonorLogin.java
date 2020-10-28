@@ -1,18 +1,22 @@
 package com.example.smileforme;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
-    protected static final String ACTIVITY_NAME = "MainActivity";
+import com.example.smileforme.data.DonorSignUp;
+
+public class DonorLogin extends AppCompatActivity {
+
+    protected final String ACTIVITY_NAME = "DonorLogin";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Log.i(ACTIVITY_NAME,"in onCreate()");
+        setContentView(R.layout.activity_donor_login);
+        Log.i(ACTIVITY_NAME,"In onCreate()");
     }
 
     @Override
@@ -45,15 +49,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i(ACTIVITY_NAME,"In onDestroy()");
     }
 
-    public void openAdmin(View view) {
-        Log.i(ACTIVITY_NAME,"Go to admin page");
-        Intent admin = new Intent(MainActivity.this, AdminLogin.class);
-        startActivity(admin);
-    }
-
-    public void donorlogin(View view) {
-        Log.i(ACTIVITY_NAME,"Go to Donor login page");
-        Intent dlogin = new Intent(this, DonorLogin.class);
-        startActivity(dlogin);
+    public void donorsignup(View view) {
+        Intent signup = new Intent(this, DonorSignUp.class);
+        startActivity(signup);
     }
 }

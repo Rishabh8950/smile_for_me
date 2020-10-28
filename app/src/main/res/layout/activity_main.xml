@@ -16,20 +16,21 @@
         app:srcCompat="@drawable/give" />
 
     <Button
-        android:id="@+id/buttondon"
+        android:id="@+id/donorbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonrec"
+        android:layout_above="@+id/recipientbtn"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="23dp"
         android:background="#FFFFFF"
-        android:text="@string/buttondon"
+        android:text="@string/btndonor"
+        android:onClick="donorlogin"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/buttonrec" />
+        app:layout_constraintBottom_toTopOf="@id/recipientbtn" />
 
     <Button
-        android:id="@+id/buttonrec"
+        android:id="@+id/recipientbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -37,25 +38,25 @@
         android:layout_marginLeft="9dp"
         android:layout_marginBottom="10dp"
         android:background="#FFFFFF"
-        android:text="@string/buttonrec"
+        android:text="@string/btnrecipient"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/buttondon" />
+        app:layout_constraintTop_toBottomOf="@id/donorbtn" />
 
     <Button
-        android:id="@+id/buttonngo"
+        android:id="@+id/ngobtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/buttonadmin"
+        android:layout_above="@+id/adminbtn"
         android:layout_alignParentRight="true"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="21dp"
         android:background="#FFFFFF"
-        android:text="@string/buttonngo"
+        android:text="@string/btnngo"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/buttonadmin" />
+        app:layout_constraintBottom_toTopOf="@id/adminbtn" />
 
     <Button
-        android:id="@+id/buttonadmin"
+        android:id="@+id/adminbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -63,8 +64,9 @@
         android:layout_marginRight="9dp"
         android:layout_marginBottom="11dp"
         android:background="#FFFFFF"
-        android:text="@string/buttonadmin"
+        android:text="@string/btnadmin"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/buttonngo" />
+        android:onClick="openAdmin"
+        app:layout_constraintTop_toBottomOf="@id/ngobtn" />
 
 </RelativeLayout>

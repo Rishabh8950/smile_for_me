@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#4BD18BDD"
+    tools:context=".data.DonorSignUp">
+
+    <TextView
+        android:id="@+id/signupdonor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2" >
+
+        <TextView
+            android:id="@+id/donorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullname"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/enterdname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dnamehint"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginLeft="60dp" />
+
+        <TextView
+            android:id="@+id/donordob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dob"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/enterddob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="@string/dobhint"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="150dp" />
+
+    </GridLayout>
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"/>
+
+           <RadioButton
+               android:id="@+id/dmale"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/male"
+               android:textSize="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginLeft="30dp"/>
+
+            <RadioButton
+                android:id="@+id/dfemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp" />
+
+            <RadioButton
+                android:id="@+id/dother"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/other"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp" />
+
+    </RadioGroup>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <TextView
+                android:id="@+id/donoremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/enterdemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/emailhint"
+                android:textSize="20dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/donormob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/enterdmob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobhint"
+                android:textSize="20dp"
+                android:inputType="phone"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/donorpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/enterdpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textSize="20dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_columnWeight="1" />
+
+            <TextView
+                android:id="@+id/donorpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enterpwd"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/enterdpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/enterpwd"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_columnWeight="1" />
+
+        </GridLayout>
+
+    <Button
+        android:id="@+id/dsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/signin"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:textSize="20dp" />
+
+</LinearLayout>
