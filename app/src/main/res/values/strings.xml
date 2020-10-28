@@ -13,6 +13,12 @@
     <string name="loginbtn">LOGIN</string>
     <string name="otpbox">Login with OTP</string>
     <string name="newdonorlogin">New Donor?</string>
+    <string name="newrecipientlog">New Recipient?</string>
+    <string name="signuprec">SIGN UP</string>
+    <string name="bpl">BPL card Number</string>
+    <string name="enterbpl">10-digit BPL Number</string>
+
+
     <string name="signup">SIGN UP</string>
     <string name="fullname">Full Name</string>
     <string name="fnamehint">Name</string>
