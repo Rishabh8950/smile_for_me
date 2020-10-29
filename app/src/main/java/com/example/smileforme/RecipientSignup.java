@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class recipientsignup extends AppCompatActivity {
-    protected final String ACTIVITY_NAME = "recipientsignup";
+public class RecipientSignup extends AppCompatActivity {
+    protected final String ACTIVITY_NAME = "RecipientSignup";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipientsignup);
+        setContentView(R.layout.activity_recipient_signup);
         Log.i(ACTIVITY_NAME,"in onCreate()");
     }
     @Override

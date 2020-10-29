@@ -7,15 +7,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.example.smileforme.data.DonorSignUp;
-
-public class Recipientlogin extends AppCompatActivity {
-    protected static final String ACTIVITY_NAME = "Recipientlogin";
+public class RecipientLogin extends AppCompatActivity {
+    protected static final String ACTIVITY_NAME = "RecipientLogin";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipientlogin);
+        setContentView(R.layout.activity_recipient_login);
         Log.i(ACTIVITY_NAME, "in onCreate()");
     }
 
@@ -50,7 +48,7 @@ public class Recipientlogin extends AppCompatActivity {
     }
 
     public void recipientsignup(View view) {
-        Intent rsignup = new Intent(this, recipientsignup.class);
+        Intent rsignup = new Intent(this, RecipientSignup.class);
         startActivity(rsignup);
     }
 }

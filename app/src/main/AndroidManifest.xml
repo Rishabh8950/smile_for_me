@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/smile_donate_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recipientsignup"></activity>
-        <activity android:name=".Recipientlogin" />
+        <activity android:name=".RecipientSignup"></activity>
+        <activity android:name=".RecipientLogin" />
         <activity android:name=".data.DonorSignUp" />
         <activity android:name=".DonorLogin" />
         <activity android:name=".AdminLogin" />

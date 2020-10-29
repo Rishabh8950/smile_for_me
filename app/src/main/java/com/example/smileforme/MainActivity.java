@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void recipientlogin(View view) {
         Log.i(ACTIVITY_NAME,"Go to recipient login page");
-        Intent rlogin = new Intent(this, Recipientlogin.class);
+        Intent rlogin = new Intent(this, RecipientLogin.class);
         startActivity(rlogin);
     }
 }
