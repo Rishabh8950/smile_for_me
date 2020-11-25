@@ -2,17 +2,46 @@ package com.example.smileforme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class AdminLogin extends AppCompatActivity {
 
     protected static final String ACTIVITY_NAME = "AdminLogin";
+    Button btn;
+    EditText username,pwd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
         Log.i(ACTIVITY_NAME,"in onCreate()");
+        username=(EditText)findViewById(R.id.unameadm);
+        pwd=(EditText)findViewById(R.id.admpwdprompt);
+        btn=(Button)findViewById(R.id.admloginbtn);
+
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(username.getText().toString().equals("garg2030@mylaurier.ca")&& pwd.getText().toString().equals("R12345"))
+                {
+                    Intent admlogin=new Intent(getApplicationContext(),Admindashboard.class);
+                    startActivity(admlogin);
+
+                }
+                else
+                    Toast.makeText(getApplicationContext(),"Incorrect Log_in credentials",Toast.LENGTH_LONG).show();
+
+
+            }
+        });
+
     }
 
     @Override
