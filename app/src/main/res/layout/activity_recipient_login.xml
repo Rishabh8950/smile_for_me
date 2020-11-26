@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#4BD18BDD"
-    tools:context=".Recipientlogin">
+    tools:context=".RecipientLogin">
 
     <TextView
         android:id="@+id/recipient"
