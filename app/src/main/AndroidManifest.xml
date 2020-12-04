@@ -9,11 +9,18 @@
         android:roundIcon="@mipmap/smile_donate_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recipientsignup"></activity>
-        <activity android:name=".Recipientlogin" />
+        <activity android:name=".ngorequests"></activity>
+        <activity android:name=".Donorrequests" />
+        <activity android:name=".Recipientrequests" />
+        <activity android:name=".Uploaditem" />
+        <activity android:name=".Items" />
+        <activity android:name=".Newjunioradmin" />
+        <activity android:name=".RecipientSignup" />
+        <activity android:name=".RecipientLogin" />
         <activity android:name=".data.DonorSignUp" />
         <activity android:name=".DonorLogin" />
         <activity android:name=".AdminLogin" />
+        <activity android:name=".Admindashboard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

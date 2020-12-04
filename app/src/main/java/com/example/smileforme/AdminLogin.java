@@ -15,6 +15,7 @@ public class AdminLogin extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "AdminLogin";
     Button btn;
     EditText username,pwd;
+    database admindb=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,8 @@ public class AdminLogin extends AppCompatActivity {
         username=(EditText)findViewById(R.id.unameadm);
         pwd=(EditText)findViewById(R.id.admpwdprompt);
         btn=(Button)findViewById(R.id.admloginbtn);
+        admindb=new database(this,"",null,1);
+
 
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +37,14 @@ public class AdminLogin extends AppCompatActivity {
                     Intent admlogin=new Intent(getApplicationContext(),Admindashboard.class);
                     startActivity(admlogin);
 
+                }else if(admindb.adselect(username.getText().toString(),pwd.getText().toString())==1){
+                    Intent admlogin=new Intent(getApplicationContext(),Admindashboard.class);
+
+                    startActivity(admlogin);
+
                 }
+
+
                 else
                     Toast.makeText(getApplicationContext(),"Incorrect Log_in credentials",Toast.LENGTH_LONG).show();
 

@@ -9,6 +9,7 @@
     <string name="bpl">BPL card Number</string>
     <string name="enterbpl">10-digit BPL Number</string>
 
+
     <string name="uname">USERNAME</string>
     <string name="namehint">Email/Mobile No.</string>
     <string name="password">PASSWORD</string>
@@ -33,5 +34,13 @@
     <string name="mobhint">854796582</string>
     <string name="enterpwd">Re-enter Password</string>
     <string name="signin">SIGN IN</string>
+    <string name="save">SAVE</string>
+    <string name="confirmpwd">CONFIRM PASSWORD</string>
+    <string name="enteremail">EMAIL</string>
+    <string name="reenterpwd">Re-enter Password</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="Verificationrequests">Verification Requests</string>
+
 
 </resources>

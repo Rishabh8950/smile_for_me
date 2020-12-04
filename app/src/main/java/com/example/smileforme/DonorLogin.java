@@ -6,10 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.smileforme.data.DonorSignUp;
 
 public class DonorLogin extends AppCompatActivity {
+    EditText user,pwd;
+    Button loginbtn;
+    database donordb=null;
 
     protected final String ACTIVITY_NAME = "DonorLogin";
     @Override
@@ -17,6 +22,23 @@ public class DonorLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donor_login);
         Log.i(ACTIVITY_NAME,"In onCreate()");
+        user=(EditText)findViewById(R.id.unamedonor);
+        pwd=(EditText)findViewById(R.id.donorpwdprompt);
+        loginbtn=(Button)findViewById(R.id.donorlogin);
+        donordb=new database(this,"",null,1);
+
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(donordb.donselect(user.getText().toString(),pwd.getText().toString())==1)
+                {
+                    Intent uploaditem=new Intent(getApplicationContext(),Uploaditem.class);
+                    startActivity(uploaditem);
+                }
+
+            }
+        });
+
     }
 
     @Override

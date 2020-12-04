@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#4BD18BDD"
+    android:layout_height="match_parent"
+    tools:context=".Recipientrequests">
+
+    <TextView
+        android:id="@+id/recipientbplverification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:text="@string/enterbpl"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/bplverification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="@string/bpl"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textEmailAddress" />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bplacceptbtn"
+            android:layout_marginLeft="90dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accept"/>
+        <Button
+            android:id="@+id/bpldeclinebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bplacceptbtn"
+            android:text="@string/decline"/>
+   </RelativeLayout>
+    <TextView
+        android:id="@+id/recipientrequests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:text="@string/Verificationrequests"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/recipientrequestlist"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+</LinearLayout>

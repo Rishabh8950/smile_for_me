@@ -35,5 +35,16 @@
     <string name="mobhint">854796582</string>
     <string name="enterpwd">Re-enter Password</string>
     <string name="signin">SIGN IN</string>
+    <string name="confirmpwd">CONFIRM PASSWORD</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+    <string name="Verificationrequests">Requests for BPL Verification</string>
+
+    <string name="enteremail">EMAIL</string>
+    <string name="reenterpwd">Re-enter Password</string>
+
+
+    <string name="save">SAVE</string>
 
 </resources>

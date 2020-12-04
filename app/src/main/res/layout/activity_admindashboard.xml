@@ -4,12 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4BD18BDD"
     android:orientation="vertical"
     tools:context=".Admindashboard">
 
     <Button
-        android:id="@+id/junioradmin"
+        android:id="@+id/addjunioradmin"
         android:text="New Junior Admin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100sp"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/recipientrequest"
+        android:text="Recipient Requests"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50sp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/donorrequest"
+        android:text="Donor Requests"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/ngorequest"
+        android:text="NGO requests"
+        android:layout_marginTop="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
 </LinearLayout>
