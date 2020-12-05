@@ -61,8 +61,9 @@ public class RecipientSignup extends AppCompatActivity {
                 String dobvalidation="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$";
                 String emailvalidation="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
                 String mobilevalidation="^[89][0-9]{9}";
-                String pwdvalidation="/^[0-9a-zA-Z]+$/";
-                String bplvalidation="^[89][0-9]{9}";
+                String pwdvalidation="/^[a-z0-9]+$/i";
+
+                String bplvalidation="^[0-9]{10}";
                 if(!name.getText().toString().matches(fullnamevalidation))
                 {
                     Toast.makeText(getApplicationContext(),"Invalid Name",Toast.LENGTH_LONG).show();
@@ -79,10 +80,10 @@ public class RecipientSignup extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Invalid Contact Number",Toast.LENGTH_LONG).show();
                 }
-             //   else if(!pwd.getText().toString().matches(pwdvalidation))
-            //    {
-             //       Toast.makeText(getApplicationContext(),"Password can contain only alphabets and numbers",Toast.LENGTH_LONG).show();
-             //   }
+
+                else if(pwd.getText().toString().isEmpty() && !pwd.getText().toString().equals(pwdvalidation)) {
+                    Toast.makeText(getApplicationContext(), "Password can contain only alphabets and numbers", Toast.LENGTH_LONG).show();
+                }
                 else if(!bpl.getText().toString().matches(bplvalidation))
                 {
                     Toast.makeText(getApplicationContext(),"Invalid BPL",Toast.LENGTH_LONG).show();
@@ -92,10 +93,7 @@ public class RecipientSignup extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Please select Gender",Toast.LENGTH_LONG).show();
                 }
-              /*  else if(!pwd.equals(re_pwd)){
-                    Toast.makeText(getApplicationContext(),"Check password",Toast.LENGTH_LONG).show();
 
-                }*/
 
 
 
@@ -104,8 +102,8 @@ public class RecipientSignup extends AppCompatActivity {
 
 
                     recipientdb.insertintorecipient(name.getText().toString(),dob.getText().toString(),gen,mail.getText().toString(),mobile.getText().toString(),pwd.getText().toString(),bpl.getText().toString());
-                    Intent openlistofitems=new Intent(getApplicationContext(),Items.class);
-                    startActivity(openlistofitems);
+                   Toast.makeText(getApplicationContext(),"Request generated. Please wait for 24 hours",Toast.LENGTH_LONG).show();
+
 
                 }
                 else

@@ -3,14 +3,17 @@ package com.example.smileforme;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Recipientrequests extends AppCompatActivity {
 
     database recipientdb=null;
-    EditText verifyBPL,listofrequests;
-    Button accept,decline;
+    EditText verifyBPL;
+    TextView viewreq;
+    Button accept,decline,listofrequests;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,8 +21,30 @@ public class Recipientrequests extends AppCompatActivity {
         setContentView(R.layout.activity_recipientrequests);
         recipientdb=new database(this,"",null,1);
         verifyBPL=(EditText) findViewById(R.id.bplverification);
-        listofrequests=(EditText)findViewById(R.id.recipientrequestlist);
+        listofrequests=(Button) findViewById(R.id.recipientrequestsbtn);
         accept=(Button)findViewById(R.id.bplacceptbtn);
         decline=(Button)findViewById(R.id.bpldeclinebtn);
+        viewreq=(TextView) findViewById(R.id.recipientrequestlist);
+
+        listofrequests.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipientdb.viewrecipientreq(viewreq);
+
+            }
+        });
+
+        accept.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipientdb.acceptrecipient(verifyBPL.getText().toString());
+            }
+        });
+        decline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recipientdb.declinerecipient(verifyBPL.getText().toString());
+            }
+        });
     }
 }

@@ -4,6 +4,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import java.util.jar.Attributes;
 
 public class database extends SQLiteOpenHelper {
     public database(Context Context, String name, SQLiteDatabase.CursorFactory factory, int version)
@@ -39,6 +43,32 @@ public class database extends SQLiteOpenHelper {
         this.getWritableDatabase().execSQL("insert into recipientdata(name,DOB,Gender,Email,Contact_No,Password,BPL_No,Status) values('"+name+"','"+DOB+"','"+Gender+"','"+Email+"','"+Contact_No+"','"+Password+"','"+BPL_No+"','"+0+"')");
 
     }
+    public void acceptrecipient(String BPL)
+    {
+        this.getWritableDatabase().execSQL("update recipientdata set status=1 where BPL_No='"+BPL+"'");
+    }
+    public void declinerecipient(String BPL)
+    {
+        this.getWritableDatabase().execSQL("update recipientdata set status=0 where BPL_No='"+BPL+"'");
+    }
+    public void viewrecipientreq(TextView tv)
+    {
+        Cursor cursor=this.getReadableDatabase().rawQuery("select * from recipientdata where status=0",null);
+        while(cursor.moveToNext())
+        {
+            tv.append("Name=");
+            tv.append(cursor.getString(1));
+            tv.append(", BPL=");
+
+            tv.append(cursor.getString(7));
+
+            tv.append("\n");
+        }
+
+    }
+
+
+
     public void insertintodonor(String name, String DOB, String Gender, String Email, String Contact_No, String Password)
     {
         this.getWritableDatabase().execSQL("insert into donordata(name,DOB,Gender,Email,Contact_No,Password) values('"+name+"','"+DOB+"','"+Gender+"','"+Email+"','"+Contact_No+"','"+Password+"')");
