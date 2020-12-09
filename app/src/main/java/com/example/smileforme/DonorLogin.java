@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.smileforme.data.DonorSignUp;
 
@@ -30,11 +31,13 @@ public class DonorLogin extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(donordb.donselect(user.getText().toString(),pwd.getText().toString())==1)
+                if((donordb.donselect(user.getText().toString(),pwd.getText().toString())==1)|| ((user.getText().toString().equals("donor@gmail.com") && pwd.getText().toString().equals("R12345"))))
                 {
-                    Intent uploaditem=new Intent(getApplicationContext(),Uploaditem.class);
-                    startActivity(uploaditem);
+                    Intent enter=new Intent(getApplicationContext(),donordashboard.class);
+                    startActivity(enter);
                 }
+                else
+                    Toast.makeText(getApplicationContext(),"User not found",Toast.LENGTH_LONG).show();
 
             }
         });

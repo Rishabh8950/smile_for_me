@@ -2,11 +2,13 @@ package com.example.smileforme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Recipientrequests extends AppCompatActivity {
 
@@ -38,12 +40,19 @@ public class Recipientrequests extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 recipientdb.acceptrecipient(verifyBPL.getText().toString());
+                Toast.makeText(getApplicationContext(),"Recipient successfully added",Toast.LENGTH_LONG).show();
+                Intent refresh=new Intent(getApplicationContext(),Recipientrequests.class);
+                startActivity(refresh);
+
             }
         });
         decline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 recipientdb.declinerecipient(verifyBPL.getText().toString());
+                Toast.makeText(getApplicationContext(),"Request denied",Toast.LENGTH_LONG).show();
+                Intent ref=new Intent(getApplicationContext(),Recipientrequests.class);
+                startActivity(ref);
             }
         });
     }

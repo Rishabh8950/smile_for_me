@@ -17,7 +17,7 @@ public class Admindashboard extends AppCompatActivity {
         setContentView(R.layout.activity_admindashboard);
         newadminbtn=findViewById(R.id.addjunioradmin);
         recipientrequest=findViewById(R.id.recipientrequest);
-        donorrequest=findViewById(R.id.donorrequest);
+
         ngorequest=findViewById(R.id.ngorequest);
 
 
@@ -38,13 +38,7 @@ public class Admindashboard extends AppCompatActivity {
             }
         });
 
-        donorrequest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent viewdonorrequests=new Intent(getApplicationContext(),Donorrequests.class);
-                startActivity(viewdonorrequests);
-            }
-        });
+
         ngorequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

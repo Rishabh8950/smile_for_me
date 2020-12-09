@@ -5,14 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     protected static final String ACTIVITY_NAME = "MainActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i(ACTIVITY_NAME,"in onCreate()");
+
+
     }
 
     @Override
@@ -61,4 +65,11 @@ public class MainActivity extends AppCompatActivity {
         Intent rlogin = new Intent(this, RecipientLogin.class);
         startActivity(rlogin);
     }
+    public void openngo(View view){
+        Log.i(ACTIVITY_NAME,"Go to recipient login page");
+        Intent ngologin=new Intent(getApplicationContext(),Ngologin.class);
+        startActivity(ngologin);
+
+    }
+
 }

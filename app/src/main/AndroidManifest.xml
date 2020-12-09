@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/smile_donate_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ngorequests"></activity>
-        <activity android:name=".Donorrequests" />
+        <activity android:name=".donordashboard"></activity>
+        <activity android:name=".ngolistactivity" />
+        <activity android:name=".Ngoregistration" />
+        <activity android:name=".Ngologin" />
+        <activity android:name=".ngorequests" />
         <activity android:name=".Recipientrequests" />
         <activity android:name=".Uploaditem" />
         <activity android:name=".Items" />

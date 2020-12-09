@@ -32,13 +32,13 @@ public class AdminLogin extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(username.getText().toString().equals("garg2030@mylaurier.ca")&& pwd.getText().toString().equals("R12345"))
+                if(username.getText().toString().equals("admin@gmail.com")&& pwd.getText().toString().equals("R12345"))
                 {
                     Intent admlogin=new Intent(getApplicationContext(),Admindashboard.class);
                     startActivity(admlogin);
 
                 }else if(admindb.adselect(username.getText().toString(),pwd.getText().toString())==1){
-                    Intent admlogin=new Intent(getApplicationContext(),Admindashboard.class);
+                    Intent admlogin=new Intent(getApplicationContext(),ngorequests.class);
 
                     startActivity(admlogin);
 

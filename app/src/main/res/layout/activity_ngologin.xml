@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#4BD18BDD"
-    tools:context=".RecipientLogin">
+    android:orientation="vertical"
+    tools:context=".Ngologin">
 
     <TextView
-        android:id="@+id/recipient"
+        android:id="@+id/ngomailid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:height="50dp"
-        android:text="@string/uname"
+        android:text="@string/email"
         android:textStyle="bold"
         android:background="#FFFFFF"
         android:textSize="20dp"
@@ -23,18 +22,18 @@
         android:layout_marginLeft="10dp" />
 
     <EditText
-        android:id="@+id/unamerecipient"
+        android:id="@+id/writengoid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:hint="@string/namehint"
+        android:hint="@string/emailhint"
         android:textSize="25dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:inputType="textEmailAddress" />
 
     <TextView
-        android:id="@+id/recipientloginpwd"
+        android:id="@+id/ngopwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -47,7 +46,7 @@
         android:layout_marginLeft="10dp" />
 
     <EditText
-        android:id="@+id/recipientpwdprompt"
+        android:id="@+id/writengopwd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -58,15 +57,15 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/recipientlogin"
+        android:id="@+id/ngologin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/recipientpwdprompt"
+        android:layout_below="@id/writengopwd"
         android:layout_centerInParent="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="60dp"
         android:layout_marginRight="20dp"
-        android:background="#FFFFFF"
+
         android:textSize="20dp"
         android:text="@string/loginbtn" />
 
@@ -79,17 +78,17 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/newrecipient"
+            android:id="@+id/newngo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="80dp"
             android:layout_marginTop="50dp"
-            android:text="@string/newrecipientlog"
+            android:text="@string/ngoregistration"
             android:textSize="20dp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/recipientsignup"
+            android:id="@+id/ngosignup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -97,7 +96,8 @@
             android:text="@string/signuprec"
             android:textColor="#061778"
             android:textSize="20dp"
-            android:onClick="recipientsignup" />
+            android:onClick="ngoregister"
+             />
 
     </LinearLayout>
 

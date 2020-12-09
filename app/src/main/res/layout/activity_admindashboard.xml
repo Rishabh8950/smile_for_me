@@ -20,12 +20,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="50sp"
         android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/donorrequest"
-        android:text="Donor Requests"
-        android:layout_marginTop="50sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+
     <Button
         android:id="@+id/ngorequest"
         android:text="NGO requests"

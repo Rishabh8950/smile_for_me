@@ -40,7 +40,34 @@
     <string name="reenterpwd">Re-enter Password</string>
     <string name="accept">Accept</string>
     <string name="decline">Decline</string>
+    <string name="ngoid">10-Digit ID</string>
+    <string name="ngoregistration">New NGO Registration?</string>
     <string name="Verificationrequests">Verification Requests</string>
+    <string name="ngoid2">NGO ID</string>
+    <string name="register">NGO Registration</string>
+    <string name="ngoname">NGO Name</string>
+    <string name="ngotype">Type of NGO</string>
+    <string name="ngotype2">NGO type</string>
+    <string name="mobile2">Number linked with Bank Account</string>
+    <string name="ngodetails">NGO Details</string>
+    <string name="ngodetails2">Details of NGO</string>
+    <string name="detailsofproduct">Details of Item</string>
+    <string name="producttype">Type of Item</string>
+    <string name="productdetails">Details of Item</string>
+    <string name="productimg">Item of Image</string>
+    <string name="uploaditem">Upload Item</string>
+    <string name="img">Upload Image</string>
+    <string name="viewngorqst">View NGO Requests</string>
+    <string name="iditem">ID</string>
+    <string name="viewitems">View Items</string>
+    <string name="selecteditem">View selected item</string>
+    <string name="noteforbpl">Note:Just enter BPL to view selected item</string>
+    <string name="fordonoronly">For Donors:</string>
+    <string name="ngonumber">NGO number Linked with account</string>
+    <string name="Donate">Donate</string>
+    <string name="ngolist">View NGO List</string>
+
+
 
 
 </resources>

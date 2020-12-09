@@ -42,7 +42,32 @@
     <string name="Verificationrequests">Requests for BPL Verification</string>
 
     <string name="enteremail">EMAIL</string>
+    <string name="ngoid">10-Digit ID</string>
+    <string name="ngoregistration">New NGO Registration?</string>
     <string name="reenterpwd">Re-enter Password</string>
+    <string name="ngoid2">NGO ID</string>
+    <string name="register">NGO Registration</string>
+    <string name="ngoname">NGO Name</string>
+    <string name="ngotype">Type of NGO</string>
+    <string name="ngotype2">NGO type</string>
+    <string name="mobile2">No.Linked with bank</string>
+    <string name="ngodetails">NGO Details</string>
+    <string name="ngodetails2">Details of NGO</string>
+    <string name="detailsofproduct">Details of Item</string>
+    <string name="producttype">Type of Item</string>
+    <string name="productdetails">Details of Item</string>
+    <string name="productimg">Image of Item</string>
+    <string name="uploaditem">Upload Item</string>
+    <string name="img">Upload Image</string>
+    <string name="viewngorqst">View NGO Requests</string>
+    <string name="iditem">ID</string>
+    <string name="viewitems">View Items</string>
+    <string name="selecteditem">View selected item</string>
+    <string name="noteforbpl">Note:Just enter BPL to view selected item</string>
+    <string name="fordonoronly">For Donors:</string>
+    <string name="ngonumber">NGO number Linked with account</string>
+    <string name="Donate">Donate</string>
+    <string name="ngolist">View NGO List</string>
 
 
     <string name="save">SAVE</string>

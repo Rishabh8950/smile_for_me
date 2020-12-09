@@ -6,15 +6,15 @@
     android:layout_height="match_parent"
     android:background="#4BD18BDD"
     android:orientation="vertical"
-    tools:context=".Items">
+    tools:context=".ngolistactivity">
 
     <TextView
-        android:id="@+id/itemverification"
+        android:id="@+id/fordonor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:height="50dp"
-        android:text="@string/iditem"
+        android:text="@string/fordonoronly"
         android:textStyle="bold"
         android:background="#FFFFFF"
         android:textSize="20dp"
@@ -22,34 +22,11 @@
         android:layout_marginLeft="10dp" />
 
     <EditText
-        android:id="@+id/itemidverification"
+        android:id="@+id/ngonumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
-        android:hint="@string/iditem"
-        android:textSize="25dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        />
-    <TextView
-        android:id="@+id/bplrec"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:height="50dp"
-        android:text="@string/bpl"
-        android:textStyle="bold"
-        android:background="#FFFFFF"
-        android:textSize="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp" />
-
-    <EditText
-        android:id="@+id/enterbplrec"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:hint="@string/bpl"
+        android:hint="@string/ngonumber"
         android:textSize="25dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
@@ -57,25 +34,21 @@
 
 
         <Button
-            android:id="@+id/acceptbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/accept"/>
-        <Button
-            android:id="@+id/viewbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/ngopaybtn"
 
-            android:text="@string/selecteditem"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Donate"/>
+
 
 
     <Button
-        android:id="@+id/viewitemsbtn"
+        android:id="@+id/ngolistbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:layout_marginTop="30dp"
         android:height="50dp"
-        android:text="@string/viewitems"
+        android:text="@string/ngolist"
         android:textStyle="bold"
 
         android:textSize="20dp"
@@ -87,7 +60,7 @@
 
     <TextView
         android:layout_marginTop="10dp"
-        android:id="@+id/productslist"
+        android:id="@+id/ngolist"
         android:background="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,14 +69,5 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         />
-    <TextView
-        android:text="@string/noteforbpl"
-        android:layout_width="match_parent"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"/>
-
-
 
 </LinearLayout>
-
-

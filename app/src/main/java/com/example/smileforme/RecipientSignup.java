@@ -103,7 +103,8 @@ public class RecipientSignup extends AppCompatActivity {
 
                     recipientdb.insertintorecipient(name.getText().toString(),dob.getText().toString(),gen,mail.getText().toString(),mobile.getText().toString(),pwd.getText().toString(),bpl.getText().toString());
                    Toast.makeText(getApplicationContext(),"Request generated. Please wait for 24 hours",Toast.LENGTH_LONG).show();
-
+                    Intent main=new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(main);
 
                 }
                 else

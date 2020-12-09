@@ -54,6 +54,7 @@
         android:background="#FFFFFF"
         android:text="@string/btnngo"
         android:textStyle="bold"
+        android:onClick="openngo"
         app:layout_constraintBottom_toTopOf="@id/adminbtn" />
 
     <Button

@@ -15,6 +15,7 @@ import com.example.smileforme.Items;
 import com.example.smileforme.R;
 import com.example.smileforme.Uploaditem;
 import com.example.smileforme.database;
+import com.example.smileforme.donordashboard;
 
 public class DonorSignUp extends AppCompatActivity {
 
@@ -80,7 +81,7 @@ public class DonorSignUp extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Invalid Contact Number",Toast.LENGTH_LONG).show();
                 }
-                else if(!pwd.getText().toString().matches(pwdvalidation))
+                else if(pwd.getText().toString().isEmpty() && !pwd.getText().toString().matches(pwdvalidation))
                 {
                     Toast.makeText(getApplicationContext(),"Password can contain only alphabets and numbers",Toast.LENGTH_LONG).show();
                 }
@@ -89,20 +90,18 @@ public class DonorSignUp extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Please select Gender",Toast.LENGTH_LONG).show();
                 }
-                else if(!pwd.equals(re_pwd)){
-                    Toast.makeText(getApplicationContext(),"Check password",Toast.LENGTH_LONG).show();
-
-                }
 
 
 
-                else if(pwd.getText().toString().equals(re_pwd))
+
+                else if(pwd.getText().toString().equals(re_pwd.getText().toString()))
                 {
 
 
                     donordb.insertintodonor(name.getText().toString(),dob.getText().toString(),gen,mail.getText().toString(),mobile.getText().toString(),pwd.getText().toString());
-                    Intent uploaditem=new Intent(getApplicationContext(), Uploaditem.class);
-                    startActivity(uploaditem);
+                   Intent enter=new Intent(getApplicationContext(), donordashboard.class);
+                   startActivity(enter);
+
 
                 }
                 else
