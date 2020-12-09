@@ -40,7 +40,7 @@ public class Uploaditem extends AppCompatActivity {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_uploaditem);
 
-                mob = (EditText) findViewById(R.id.enterdmob);
+                mob = (EditText) findViewById(R.id.entermobile);
                 uploadbtn = (Button) findViewById(R.id.uploaditembtn);
                 itemdetails = (EditText) findViewById(R.id.enterproductdetails);
                 itemtype = (EditText) findViewById(R.id.enterproducttype);
@@ -48,7 +48,7 @@ public class Uploaditem extends AppCompatActivity {
 
                 itemsdb = new database(this, "", null, 1);
 
-                imgupload.setOnClickListener(new View.OnClickListener() {
+               /* imgupload.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         try {
@@ -67,16 +67,20 @@ public class Uploaditem extends AppCompatActivity {
 
 
                     }
-                });
+                });*/
 
 
                 uploadbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         itemsdb.insertintoitems(itemtype.getText().toString(), itemdetails.getText().toString(), mob.getText().toString());
+                        Toast.makeText(getApplicationContext(),"Item uploaded",Toast.LENGTH_LONG).show();
+                        Intent home=new Intent(getApplicationContext(),MainActivity.class);
+                        startActivity(home);
 
                     }
                 });
+
 
 
             }
