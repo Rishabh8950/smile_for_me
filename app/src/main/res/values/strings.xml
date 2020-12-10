@@ -30,7 +30,7 @@
     <string name="other">Others</string>
     <string name="email">Email</string>
     <string name="emailhint">name123@mail.com</string>
-    <string name="dnamehint">Name</string>
+    <string name="dnamehint">John Doe</string>
     <string name="mobile">Mobile No.</string>
     <string name="mobhint">854796582</string>
     <string name="enterpwd">Re-enter Password</string>
@@ -76,7 +76,7 @@
     <string name="food">Food</string>
     <string name="others">Others</string>
     <string name="noofproduct">Number of Items</string>
-    <string name="donationlist">My Donations</string>
+    <string name="donationlist">Smiles Gathered</string>
     <string name="aboutus">About Us</string>
     <string name="home">Home Page</string>
     <string name="feedback">Feedback</string>
@@ -140,5 +140,7 @@ Created by - \n
 Ramya Shree Tatikonda \n
 Rishabh Garg \n
     </string>
+    <string name="logout">Log Out</string>
+    <string name="listofngo">Choose an NGO to donate :</string>
 
 </resources>

@@ -134,5 +134,7 @@ Version 1.0
 Created by -<br />
 Ramya Shree Tatikonda<br />
 Rishabh Garg</string>
+    <string name="logout">Log Out</string>
+    <string name="listofngo">Choose an NGO to donate :</string>
 
 </resources>

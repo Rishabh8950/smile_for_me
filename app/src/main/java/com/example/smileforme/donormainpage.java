@@ -88,6 +88,11 @@ public class donormainpage extends AppCompatActivity {
                 ft.replace(R.id.donormain, fragment).addToBackStack(null);
                 ft.commit();
                 break;
+
+            case R.id.action_five:
+                Intent ngolist = new Intent(donormainpage.this, ngolistactivity.class);
+                startActivity(ngolist);
+                break;
         }
         return true;
     }

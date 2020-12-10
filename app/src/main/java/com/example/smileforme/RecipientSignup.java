@@ -30,7 +30,7 @@ public class RecipientSignup extends AppCompatActivity {
         setContentView(R.layout.activity_recipient_signup);
         Log.i(ACTIVITY_NAME, "in onCreate()");
         signinbtn=findViewById(R.id.recipientsignin);
-        recipientdb=new database(this,"",null,1);
+        recipientdb=new database(this);
         name=findViewById(R.id.enterrecipientname);
         dob=findViewById(R.id.enterrecipientdob);
         mail=findViewById(R.id.enterrecipientemail);

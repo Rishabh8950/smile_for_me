@@ -21,7 +21,7 @@ public class Recipientrequests extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipientrequests);
-        recipientdb=new database(this,"",null,1);
+        recipientdb=new database(this);
         verifyBPL=(EditText) findViewById(R.id.bplverification);
         listofrequests=(Button) findViewById(R.id.recipientrequestsbtn);
         accept=(Button)findViewById(R.id.bplacceptbtn);

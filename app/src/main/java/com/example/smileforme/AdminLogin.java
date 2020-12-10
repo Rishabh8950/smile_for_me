@@ -25,7 +25,7 @@ public class AdminLogin extends AppCompatActivity {
         username=(EditText)findViewById(R.id.unameadm);
         pwd=(EditText)findViewById(R.id.admpwdprompt);
         btn=(Button)findViewById(R.id.admloginbtn);
-        admindb=new database(this,"",null,1);
+        admindb=new database(this);
 
 
 

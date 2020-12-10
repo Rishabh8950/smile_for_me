@@ -27,7 +27,7 @@ public class Ngoregistration extends AppCompatActivity {
         ngodetails=(EditText)findViewById(R.id.ngodetails);
         register=(Button)findViewById(R.id.ngosignin);
 
-        ngodb=new database(this,"",null,1);
+        ngodb=new database(this);
 
 
 

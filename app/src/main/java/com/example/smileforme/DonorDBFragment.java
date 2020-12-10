@@ -77,13 +77,13 @@ public class DonorDBFragment extends Fragment {
         ngo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent ngo = new Intent(getContext(), ngolistactivity.class);
-                //startActivity(ngo);
-                fragment = new UploaditemFragment();
-                fm = getFragmentManager();
-                ft = fm.beginTransaction();
-                ft.replace(R.id.donormain, fragment).addToBackStack(null);
-                ft.commit();
+                Intent ngo = new Intent(getContext(), ngolistactivity.class);
+                startActivity(ngo);
+//                fragment = new NgolistFragment();
+//                fm = getFragmentManager();
+//                ft = fm.beginTransaction();
+//                ft.replace(R.id.donormain, fragment).addToBackStack(null);
+//                ft.commit();
             }
         });
     }

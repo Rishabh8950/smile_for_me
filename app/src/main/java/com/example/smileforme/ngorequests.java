@@ -25,7 +25,7 @@ public class ngorequests extends AppCompatActivity {
         accept=(Button)findViewById(R.id.ngoacceptbtn);
         decline=(Button)findViewById(R.id.ngodeclinebtn);
         viewreq=(TextView) findViewById(R.id.ngorequestlist);
-        ngodb=new database(this,"",null,1);
+        ngodb=new database(this);
 
 
 

@@ -20,11 +20,11 @@ public class ngolistactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ngolistactivity);
+        setContentView(R.layout.activity_ngolist);
         contact=(EditText)findViewById(R.id.ngonumber);
         pay=(Button)findViewById(R.id.ngopaybtn);
         viewlist=(Button)findViewById(R.id.ngolistbtn);
-        ngodb= new database(this,"",null,1);
+        ngodb= new database(this);
         listofngos=(TextView)findViewById(R.id.ngolist);
 
         viewlist.setOnClickListener(new View.OnClickListener() {

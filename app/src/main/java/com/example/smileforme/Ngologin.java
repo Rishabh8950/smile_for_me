@@ -21,7 +21,7 @@ public class Ngologin extends AppCompatActivity {
         mail=(EditText)findViewById(R.id.writengoid);
         pwd=(EditText)findViewById(R.id.writengopwd);
         login=(Button)findViewById(R.id.ngologin);
-        ngodb=new database(this,"",null,1);
+        ngodb=new database(this);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override

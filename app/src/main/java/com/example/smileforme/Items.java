@@ -27,7 +27,7 @@ public class Items extends AppCompatActivity {
         accept=(Button)findViewById(R.id.acceptbtn);
         viewdetail=(Button)findViewById(R.id.viewbtn);
         viewitems=(TextView) findViewById(R.id.productslist);
-        itemdb=new database(this,"",null,1);
+        itemdb=new database(this);
 
         viewitems.setOnClickListener(new View.OnClickListener() {
             @Override

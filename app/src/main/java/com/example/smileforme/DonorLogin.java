@@ -26,12 +26,12 @@ public class DonorLogin extends AppCompatActivity {
         user=(EditText)findViewById(R.id.unamedonor);
         pwd=(EditText)findViewById(R.id.donorpwdprompt);
         loginbtn=(Button)findViewById(R.id.donorlogin);
-        donordb=new database(this,"",null,1);
+        donordb=new database(this);
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if((donordb.donselect(user.getText().toString(),pwd.getText().toString())==1)|| ((user.getText().toString().equals("donor@gmail.com") && pwd.getText().toString().equals("R12345"))))
+                if((donordb.donselect(user.getText().toString(),pwd.getText().toString())==1))
                 {
                     Intent enter=new Intent(getApplicationContext(), donormainpage.class);
                     startActivity(enter);

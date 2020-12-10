@@ -25,7 +25,7 @@ public class Newjunioradmin extends AppCompatActivity {
         pwd=findViewById(R.id.newadminpwdprompt);
         savebtn=findViewById(R.id.addadmin);
         confirmpwd=findViewById(R.id.newadminconfirmpwdprompt);
-        admindb=new database(this,"",null,1);
+        admindb=new database(this);
         savebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

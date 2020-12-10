@@ -20,7 +20,7 @@ import java.io.IOException;
 public class UploaditemFragment extends Fragment {
 
     private static final String TEMP_IMAGE ="" ;
-    EditText mob,itemtype,itemdetails;
+    EditText mob,itemtype,itemdetails,itemsno;
     database itemsdb=null;
     Button uploadbtn,imgupload;
 
@@ -37,15 +37,16 @@ public class UploaditemFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-        mob = view.findViewById(R.id.enterdmob);
+        mob = view.findViewById(R.id.dphone);
         uploadbtn = view.findViewById(R.id.uploaditembtn);
         itemdetails = view.findViewById(R.id.enterproductdetails);
         itemtype = view.findViewById(R.id.enterproducttype);
         imgupload = view.findViewById(R.id.imgupload);
+        itemsno = view.findViewById(R.id.enteritemsno);
 
-        itemsdb = new database(getContext(), "", null, 1);
+        itemsdb = new database(getContext());
 
-        imgupload.setOnClickListener(new View.OnClickListener() {
+       /* imgupload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
@@ -64,14 +65,17 @@ public class UploaditemFragment extends Fragment {
 
 
             }
-        });
+        }); */
 
 
         uploadbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemsdb.insertintoitems(itemtype.getText().toString(), itemdetails.getText().toString(), mob.getText().toString());
-
+                itemsdb.insertintoitems(itemtype.getText().toString(), itemdetails.getText().toString(), mob.getText().toString(),
+                        Integer.parseInt(itemsno.getText().toString()));
+                Toast.makeText(getContext(),"Item uploaded",Toast.LENGTH_LONG).show();
+                Intent home=new Intent(getContext(),donormainpage.class);
+                startActivity(home);
             }
         });
 

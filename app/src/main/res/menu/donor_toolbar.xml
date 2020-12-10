@@ -12,11 +12,10 @@
 
     <item
         android:id="@+id/action_two"
-        android:icon="@android:drawable/ic_input_get"
+        android:icon="@drawable/ic_baseline_smile"
         android:orderInCategory="102"
         android:title="@string/donationlist"
-        app:showAsAction="always"
-        android:iconTint="#FFFFFF"/>
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/action_three"
@@ -30,6 +29,12 @@
         android:id="@+id/action_four"
         android:orderInCategory="104"
         android:title="@string/aboutus"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_five"
+        android:orderInCategory="105"
+        android:title="@string/logout"
         app:showAsAction="never" />
 
 

@@ -24,7 +24,7 @@ public class RecipientLogin extends AppCompatActivity {
         user=(EditText)findViewById(R.id.unamerecipient);
         pwd=(EditText)findViewById(R.id.recipientpwdprompt);
         loginbtn=(Button)findViewById(R.id.recipientlogin);
-        recipientdb=new database(this,"",null,1);
+        recipientdb=new database(this);
 
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
