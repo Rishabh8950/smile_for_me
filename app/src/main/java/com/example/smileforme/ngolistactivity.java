@@ -40,6 +40,9 @@ public class ngolistactivity extends AppCompatActivity {
                 if(ngodb.ngocontactvalidation(contact.getText().toString())==1)
                 {
                     String url="http://m.p-y.tm";
+
+
+
                     Intent pay=new Intent(Intent.ACTION_VIEW);
                     pay.setData(Uri.parse(url));
                     startActivity(pay);

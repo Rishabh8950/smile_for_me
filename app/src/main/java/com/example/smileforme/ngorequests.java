@@ -42,10 +42,16 @@ public class ngorequests extends AppCompatActivity {
         accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ngodb.acceptngo(verifyid.getText().toString());
-                Toast.makeText(getApplicationContext(),"NGO successfully registered",Toast.LENGTH_LONG).show();
-                Intent refresh=new Intent(getApplicationContext(),ngorequests.class);
-                startActivity(refresh);
+                if(ngodb.ngosregistertocheckid(verifyid.getText().toString())==1)
+                {
+                    ngodb.acceptngo(verifyid.getText().toString());
+                    Toast.makeText(getApplicationContext(), "NGO successfully registered", Toast.LENGTH_LONG).show();
+                    Intent refresh = new Intent(getApplicationContext(), ngorequests.class);
+                    startActivity(refresh);
+                }
+                else
+                    Toast.makeText(getApplicationContext(),"Check ID",Toast.LENGTH_LONG).show();
+
 
             }
         });
