@@ -6,22 +6,18 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="#4BD18BDD"
-    tools:context=".donordashboard">
+    tools:context=".donormainpage">
 
-    <Button
-        android:id="@+id/uploaditem"
-        android:text="@string/uploaditem"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_marginTop="100sp"
-        android:layout_height="100dp"/>
-    <Button
-        android:id="@+id/payngo"
-        android:text="Donate to an NGO"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
 
+    <FrameLayout
+        android:id="@+id/donormain"
         android:layout_width="match_parent"
-        android:layout_marginTop="50sp"
-        android:layout_height="100dp"/>
-
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

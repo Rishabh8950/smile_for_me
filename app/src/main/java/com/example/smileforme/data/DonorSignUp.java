@@ -11,11 +11,9 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
-import com.example.smileforme.Items;
 import com.example.smileforme.R;
-import com.example.smileforme.Uploaditem;
 import com.example.smileforme.database;
-import com.example.smileforme.donordashboard;
+import com.example.smileforme.donormainpage;
 
 public class DonorSignUp extends AppCompatActivity {
 
@@ -99,7 +97,7 @@ public class DonorSignUp extends AppCompatActivity {
 
 
                     donordb.insertintodonor(name.getText().toString(),dob.getText().toString(),gen,mail.getText().toString(),mobile.getText().toString(),pwd.getText().toString());
-                   Intent enter=new Intent(getApplicationContext(), donordashboard.class);
+                   Intent enter=new Intent(getApplicationContext(), donormainpage.class);
                    startActivity(enter);
 
 

@@ -58,6 +58,7 @@
     <string name="productdetails">Details of Item</string>
     <string name="productimg">Image of Item</string>
     <string name="uploaditem">Upload Item</string>
+    <string name="clothes">Clothes</string>
     <string name="img">Upload Image</string>
     <string name="viewngorqst">View NGO Requests</string>
     <string name="iditem">ID</string>
@@ -71,5 +72,73 @@
 
 
     <string name="save">SAVE</string>
+    <string name="donormain">What do you want to donate today?</string>
+    <string name="food">Food</string>
+    <string name="others">Others</string>
+    <string name="noofproduct">Number of Items</string>
+    <string name="donationlist">My Donations</string>
+    <string name="aboutus">About Us</string>
+    <string name="home">Home Page</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedbackform">Please share your experience!!</string>
+    <string name="feedbackdetails">Let us know how can we \n improve ourselves</string>
+    <string name="submit">Submit</string>
+    <string name="feedbacksubmit">Feedback Submitted</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="about"> <b>About SmileForMe</b> \n
+      \n  SmileForMe is a public platform to give and receive charities.
+The app is a noble initiative which makes providing donations and receiving donations much easier. \n
+\n
+Anyone who wants donate things like furniture, clothes, footwear, books, food etc can use this app.
+This app can also be used to make large scale donations to charity organisations like NGOs. \n
+\n
+SmileForMe can be used by people who have a Below poverty line card for receiving donations. And NGOs can use
+this app to register and receive donations. \n
+\n
+"One person can\'t help all. But all can help all." \n
+\n
+Let\'s use SmileForMe and spread smiles all around. \n
+\n
+How it Works \n
+\n
+For Donors \n
+Step 1: Register with SmileForMe
+\n
+Step 2: Choose what you want to donate
+\n
+Step 3: You also have an option to remove any items uploaded for donations \n
+\n
+For Recipient \n
+Step 1: Register with SmileForMe
+\n
+Step 2: Wait to be approved by admin
+\n
+Step 3: Check what items are available for donation
+\n
+Step 4: Choose the item you want
+\n
+Step 5: Wait for the donation to be approved by admin \n
+\n
+For NGO \n
+Step 1: Register with SmileForMe
+\n
+Step 2: Wait to be approved by admin
+\n
+Step 3: Create your profile and wait for donations
+\n
+Step 4: When someone donates then the money will be credited to the NGO\'s bank account \n
+\n
+Important Notes:\n
+
+SmileForMe doesn\'t work inter-city or state. You can give or accept donations if you belong to the same village,
+town, or city. \n
+\n
+Version 1.0
+\n
+Created by - \n
+Ramya Shree Tatikonda \n
+Rishabh Garg \n
+    </string>
 
 </resources>

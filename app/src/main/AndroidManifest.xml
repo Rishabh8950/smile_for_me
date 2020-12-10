@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smileforme">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/smile_donate"
@@ -9,13 +13,16 @@
         android:roundIcon="@mipmap/smile_donate_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".donordashboard"></activity>
+        <activity android:name=".donormainpage"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".ngolistactivity" />
         <activity android:name=".Ngoregistration" />
         <activity android:name=".Ngologin" />
         <activity android:name=".ngorequests" />
         <activity android:name=".Recipientrequests" />
-        <activity android:name=".Uploaditem" />
+        <activity android:name=".Uploaditem"
+                  android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Items" />
         <activity android:name=".Newjunioradmin" />
         <activity android:name=".RecipientSignup" />

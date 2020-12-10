@@ -56,6 +56,7 @@
     <string name="productdetails">Details of Item</string>
     <string name="productimg">Item of Image</string>
     <string name="uploaditem">Upload Item</string>
+    <string name="clothes">Clothes</string>
     <string name="img">Upload Image</string>
     <string name="viewngorqst">View NGO Requests</string>
     <string name="iditem">ID</string>
@@ -66,8 +67,72 @@
     <string name="ngonumber">NGO number Linked with account</string>
     <string name="Donate">Donate</string>
     <string name="ngolist">View NGO List</string>
+    <string name="donormain">What do you want to donate today?</string>
+    <string name="food">Food</string>
+    <string name="others">Others</string>
+    <string name="noofproduct">Number of Items</string>
+    <string name="donationlist">My Donations</string>
+    <string name="aboutus">About Us</string>
+    <string name="home">Home Page</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedbackform">Please share your experience!!</string>
+    <string name="feedbackdetails">Let us know what you liked about us</string>
+    <string name="submit">Submit</string>
+    <string name="feedbacksubmit">Feedback Submitted</string>
+    <string name="cancel">Cancel</string>
 
+    <string name="about"> <b>About SmileForMe</b> <br /> <br />
+        SmileForMe is a public platform to give and receive charities.
+The app is a noble initiative which makes providing donations and receiving donations much easier.
+<br /> <br />
+Anyone who wants donate things like furniture, clothes, footwear, books, food etc can use this app.
+This app can also be used to make large scale donations to charity organisations like NGOs.<br />
+<br />
+SmileForMe can be used by people who have a Below poverty line card for receiving donations. And NGOs can use
+this app to register and receive donations.
+<br /><br />
+"One person can\'t help all. But all can help all."
+<br /><br />
+Let\'s use SmileForMe and spread smiles all around.
+<br /><br />
+How it Works
+<br /><br />
+For Donors<br />
+Step 1: Register with SmileForMe
+<br /><br />
+Step 2: Choose what you want to donate
+<br /><br />
+Step 3: You also have an option to remove any items uploaded for donations
+<br /><br />
+For Recipient<br />
+Step 1: Register with SmileForMe
+<br /><br />
+Step 2: Wait to be approved by admin
+<br /><br />
+Step 3: Check what items are available for donation
+<br /><br />
+Step 4: Choose the item you want
+<br /><br />
+Step 5: Wait for the donation to be approved by admin
+<br /><br />
+For NGO<br />
+Step 1: Register with SmileForMe
+<br /><br />
+Step 2: Wait to be approved by admin
+<br /><br />
+Step 3: Create your profile and wait for donations
+<br /><br />
+Step 4: When someone donates then the money will be credited to the NGO\'s bank account.
+<br /><br />
+Important Notes:<br /><br />
 
-
+SmileForMe doesn\'t work inter-city or state. You can give or accept donations if you belong to the same village,
+town, or city.
+<br /><br />
+Version 1.0
+<br /><br />
+Created by -<br />
+Ramya Shree Tatikonda<br />
+Rishabh Garg</string>
 
 </resources>

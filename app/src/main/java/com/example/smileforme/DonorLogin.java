@@ -33,7 +33,7 @@ public class DonorLogin extends AppCompatActivity {
             public void onClick(View v) {
                 if((donordb.donselect(user.getText().toString(),pwd.getText().toString())==1)|| ((user.getText().toString().equals("donor@gmail.com") && pwd.getText().toString().equals("R12345"))))
                 {
-                    Intent enter=new Intent(getApplicationContext(),donordashboard.class);
+                    Intent enter=new Intent(getApplicationContext(), donormainpage.class);
                     startActivity(enter);
                 }
                 else
