@@ -80,30 +80,6 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         />
-    <TextView
-        android:id="@+id/itemimage"
-        android:layout_marginTop="30dp"
-        android:height="100dp"
-        android:layout_width="match_parent"
-        android:text="@string/img"
-        android:textStyle="bold"
-        android:background="#FFFFFF"
-        android:textSize="20dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_height="wrap_content"/>
-
-    <Button
-
-        android:id="@+id/imgupload"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:textSize="25dp"
-        android:hint="@string/img"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        />
 
 
 

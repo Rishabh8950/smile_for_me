@@ -2,16 +2,18 @@ package com.example.smileforme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Items extends AppCompatActivity {
     EditText itemid,bpl;
     TextView viewitems;
-    Button accept,viewdetail,openlist;
+    Button accept,viewdetaill,openlist;
     database itemdb=null;
 
 
@@ -25,26 +27,44 @@ public class Items extends AppCompatActivity {
         bpl=(EditText)findViewById(R.id.enterbplrec);
         openlist=(Button) findViewById(R.id.viewitemsbtn);
         accept=(Button)findViewById(R.id.acceptbtn);
-        viewdetail=(Button)findViewById(R.id.viewbtn);
+        viewdetaill=(Button)findViewById(R.id.viewbtn);
         viewitems=(TextView) findViewById(R.id.productslist);
         itemdb=new database(this,"",null,1);
 
-        viewitems.setOnClickListener(new View.OnClickListener() {
+        openlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemdb.viewallitems(viewitems);
+
+
+                    itemdb.viewallitems(viewitems);
+                    Toast.makeText(getApplicationContext(), "list", Toast.LENGTH_LONG).show();
+
+
             }
         });
-        viewdetail.setOnClickListener(new View.OnClickListener() {
+        viewdetaill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemdb.viewselecteditem(viewdetail,bpl.getText().toString());
+                itemdb.viewselecteditem(viewitems,bpl.getText().toString());
+
+
             }
         });
         accept.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemdb.acceptitem(bpl.getText().toString());
+                 {
+                     if(itemdb.recipientvalidationfordonation(bpl.getText().toString())==1) {
+                         itemdb.acceptitem(bpl.getText().toString(), itemid.getText().toString());
+                         Toast.makeText(getApplicationContext(), "Congratulations", Toast.LENGTH_LONG).show();
+                         Intent refresh=new Intent(getApplicationContext(),Items.class);
+                         startActivity(refresh);
+                     }
+
+                     else
+                         Toast.makeText(getApplicationContext(),"check details",Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 

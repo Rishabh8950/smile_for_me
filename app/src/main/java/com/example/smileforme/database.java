@@ -24,7 +24,7 @@ public class database extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("Create table donordata(id integer primary key autoincrement, name text, DOB text, Gender text, Email text, Contact_No text, Password text)");
 
         sqLiteDatabase.execSQL("Create table ngodata(id integer primary key autoincrement, name text, ngoid text, email text, mobile text, password text, ngodetails text, status int ) ");
-        sqLiteDatabase.execSQL("Create table itemsdata(id integer primary key autoincrement, itemtype text, itemdetails text, mobile text, BPL int) ");
+        sqLiteDatabase.execSQL("Create table itemsdata(id integer primary key autoincrement, itemtype text, itemdetails text, mobile text,BPL text) ");
     }
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int ver, int ver2)//updation part for all tables
@@ -47,7 +47,7 @@ public class database extends SQLiteOpenHelper {
     }
     public void insertintoitems(String itemtype,String itemdetails,String mobile)//linked with uploaditem to insert values
     {
-        this.getWritableDatabase().execSQL("insert into itemsdata(itemtype,itemdetails,mobile,BPL) values('"+itemtype+"','"+itemdetails+"','"+mobile+"','"+0+"')");
+        this.getWritableDatabase().execSQL("insert into itemsdata(itemtype,itemdetails,mobile,BPL) values('"+itemtype+"','"+itemdetails+"','"+mobile+"','0')");
     }
 
     public void insertintorecipient(String name, String DOB, String Gender, String Email, String Contact_No, String Password, String BPL_No)//recipientsignup(insertion of values)
@@ -71,7 +71,7 @@ public class database extends SQLiteOpenHelper {
         this.getWritableDatabase().execSQL("delete from recipientdata where BPL_No='"+BPL+"'");
     }
 
-    public void acceptitem(String BPL)//recipient accepting item by using bpl and entering itemid (Items activity)
+    public void acceptitem(String BPL,String ID)//recipient accepting item by using bpl and entering itemid (Items activity)
     {
         this.getWritableDatabase().execSQL("update itemsdata set BPL='"+BPL+"' where ID='"+ID+"'");
     }
@@ -79,7 +79,28 @@ public class database extends SQLiteOpenHelper {
     //public void viewselecteditem(TextView tv,String BPL)
     public void viewselecteditem(TextView tv,String BPL)//view accepted item (by recipient) items activity
     {
-        this.getReadableDatabase().execSQL("select * from itemsdata where BPL='"+BPL+"'");
+       Cursor cursor=this.getReadableDatabase().rawQuery("select * from itemsdata where BPL='"+BPL+"'",null);
+       while (cursor.moveToNext())
+       {
+           tv.append(cursor.getString(0));
+           tv.append(") Item=");
+           tv.append(cursor.getString(1));
+           tv.append("\n");
+
+           tv.append("Itemid=");
+           tv.append(cursor.getString(0));
+
+           tv.append("\n");
+
+           tv.append("Contact no=");
+           tv.append(cursor.getString(3));
+           tv.append("\n");
+
+
+
+
+       }
+
         //this.getReadableDatabase().execSQL("select * from itemsdata where BPL='"+BPL+"'");
     }
 
@@ -101,9 +122,15 @@ public class database extends SQLiteOpenHelper {
     }
 
 
+
+
+
+
+
     public void viewallitems(TextView tv)//view all uploaded items
     {
-        Cursor cursor=this.getReadableDatabase().rawQuery("select * from itemsdata where BPL='"+0+"'",null);
+        //Cursor cursor=this.getReadableDatabase().rawQuery("select * from itemsdata where BPL=0",null);
+        Cursor cursor=this.getReadableDatabase().rawQuery("select * from itemsdata where BPL=0",null);
         while(cursor.moveToNext())
         {
             tv.append("Id=");
@@ -114,6 +141,7 @@ public class database extends SQLiteOpenHelper {
             tv.append("Details=");
             tv.append(cursor.getString(2));
             tv.append("\n");
+
 
         }
         cursor.close();//change
@@ -159,12 +187,10 @@ public class database extends SQLiteOpenHelper {
             tv.append("Name=");
             tv.append(cursor.getString(1));
             tv.append(", Type=");
-            tv.append(cursor.getString(6));
-            tv.append("\n");
-            tv.append("Number=");
-
             tv.append(cursor.getString(4));
             tv.append("\n");
+
+
 
 
         }
@@ -255,6 +281,21 @@ public class database extends SQLiteOpenHelper {
         return f;
 
     }
+    public int recipientvalidationfordonation(String BPL)//validation at the time of donation
+    {
+        int f=0;
+        Cursor cursor=this.getReadableDatabase().rawQuery("select * from recipientdata where BPL_No='"+BPL+"' AND status='"+1+"'",null);
+        while(cursor.moveToNext())
+        {
+            f=1;
+        }
+        cursor.close();//change
+        return f;
+
+    }
+
+
+
 
 
 }

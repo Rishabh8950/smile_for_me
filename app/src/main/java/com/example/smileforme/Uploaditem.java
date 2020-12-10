@@ -44,30 +44,11 @@ public class Uploaditem extends AppCompatActivity {
                 uploadbtn = (Button) findViewById(R.id.uploaditembtn);
                 itemdetails = (EditText) findViewById(R.id.enterproductdetails);
                 itemtype = (EditText) findViewById(R.id.enterproducttype);
-                imgupload = (Button) findViewById(R.id.imgupload);
+
 
                 itemsdb = new database(this, "", null, 1);
 
-               /* imgupload.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        try {
-                            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                            openFileOutput(TEMP_IMAGE, MODE_WORLD_WRITEABLE).close();
-                         //   tempImageUri = Uri.fromFile(getFileStreamPath(TEMP_IMAGE));
-                            String tempImageUri="";
-                            intent.putExtra(MediaStore.EXTRA_OUTPUT, tempImageUri);
-                          //  startActivityForResult(intent, TAKE_SNAPSHOT);
 
-                        } catch (ActivityNotFoundException e) {
-                            Toast.makeText(getApplicationContext(), "No camera app found!", Toast.LENGTH_LONG).show();
-                        } catch (IOException e) {
-                            Toast.makeText(getApplicationContext(), "Unable to write file on internal storage", Toast.LENGTH_LONG).show();
-                        }
-
-
-                    }
-                });*/
 
 
                 uploadbtn.setOnClickListener(new View.OnClickListener() {
