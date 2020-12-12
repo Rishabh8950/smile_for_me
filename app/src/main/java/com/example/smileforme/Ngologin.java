@@ -28,7 +28,7 @@ public class Ngologin extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if((ngodb.ngoselect(mail.getText().toString(),pwd.getText().toString())==1)|| ((mail.getText().toString().equals("ngo@gmail.com") && pwd.getText().toString().equals("R12345"))))
+                if((ngodb.ngoselect(mail.getText().toString(),pwd.getText().toString())==1))
                 {
                     Intent viewngolist=new Intent(getApplicationContext(),ngolistactivity.class);
                     startActivity(viewngolist);

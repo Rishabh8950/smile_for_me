@@ -31,7 +31,7 @@ public class RecipientLogin extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if((recipientdb.recselect(user.getText().toString(),pwd.getText().toString())==1)|| ((user.getText().toString().equals("recipient@gmail.com") && pwd.getText().toString().equals("R12345"))))
+                if((recipientdb.recselect(user.getText().toString(),pwd.getText().toString())==1))
                 {
                     Intent openlistofitems=new Intent(getApplicationContext(),Items.class);
                     startActivity(openlistofitems);

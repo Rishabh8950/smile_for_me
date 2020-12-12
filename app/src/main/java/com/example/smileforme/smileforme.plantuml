@@ -1,0 +1,398 @@
+@startuml
+
+title __SMILEFORME's Class Diagram__\n
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.AboutusFragment {
+        + onCreate()
+        + onCreateView()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.AdminLogin {
+        {static} # ACTIVITY_NAME : String
+        ~ btn : Button
+        ~ pwd : EditText
+        ~ username : EditText
+        # onCreate()
+        # onDestroy()
+        # onPause()
+        # onResume()
+        # onStart()
+        # onStop()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.Admindashboard {
+        ~ donorrequest : Button
+        ~ newadminbtn : Button
+        ~ ngorequest : Button
+        ~ recipientrequest : Button
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.DonorDBFragment {
+        ~ clothes : Button
+        ~ fm : FragmentManager
+        ~ food : Button
+        ~ fragment : Fragment
+        ~ ft : FragmentTransaction
+        ~ ngo : Button
+        ~ others : Button
+        {static} - ACTIVITY_NAME : String
+        + onCreate()
+        + onCreateView()
+        + onViewCreated()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.DonorLogin {
+        # ACTIVITY_NAME : String
+        ~ loginbtn : Button
+        ~ pwd : EditText
+        ~ user : EditText
+        + donorsignup()
+        # onCreate()
+        # onDestroy()
+        # onPause()
+        # onResume()
+        # onStart()
+        # onStop()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.DonorSignUp {
+        # ACTIVITY_NAME : String
+        ~ dob : EditText
+        ~ dobvalidation : String
+        ~ emailvalidation : String
+        ~ female : RadioButton
+        ~ fullnamevalidation : String
+        ~ gen : String
+        ~ mail : EditText
+        ~ male : RadioButton
+        ~ mobile : EditText
+        ~ mobilevalidation : String
+        ~ name : EditText
+        ~ other : RadioButton
+        ~ pwd : EditText
+        ~ pwdvalidation : String
+        ~ re_pwd : EditText
+        ~ signinbtn : Button
+        + validateDob()
+        + validateMail()
+        + validateMobile()
+        + validateName()
+        + validatePwd()
+        # onCreate()
+        # onDestroy()
+        # onPause()
+        # onResume()
+        # onStart()
+        # onStop()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.Items {
+        ~ accept : Button
+        ~ bpl : EditText
+        ~ itemid : EditText
+        ~ openlist : Button
+        ~ viewdetaill : Button
+        ~ viewitems : TextView
+        {static} - ACTIVITY_NAME : String
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.MainActivity {
+        {static} # ACTIVITY_NAME : String
+        + donorlogin()
+        + openAdmin()
+        + openngo()
+        + recipientlogin()
+        # onCreate()
+        # onDestroy()
+        # onPause()
+        # onResume()
+        # onStart()
+        # onStop()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.Newjunioradmin {
+        ~ confirmpwd : EditText
+        ~ pwd : EditText
+        ~ pwdadm : TextView
+        ~ savebtn : Button
+        ~ uadm : TextView
+        ~ uname : EditText
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.Ngologin {
+        ~ login : Button
+        ~ mail : EditText
+        ~ pwd : EditText
+        + ngoregister()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.Ngoregistration {
+        ~ email : EditText
+        ~ emailvalidation : String
+        ~ fullnamevalidation : String
+        ~ mobile : EditText
+        ~ mobilevalidation : String
+        ~ ngodetails : EditText
+        ~ ngoid : EditText
+        ~ ngoidvalidation : String
+        ~ ngoname : EditText
+        ~ pwd : EditText
+        ~ pwdvalidation : String
+        ~ register : Button
+        ~ repwd : EditText
+        + validateMail()
+        + validateMobile()
+        + validateName()
+        + validateNgoId()
+        + validatePwd()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.RecipientLogin {
+        {static} # ACTIVITY_NAME : String
+        ~ loginbtn : Button
+        ~ pwd : EditText
+        ~ user : EditText
+        + recipientsignup()
+        # onCreate()
+        # onDestroy()
+        # onPause()
+        # onResume()
+        # onStart()
+        # onStop()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.RecipientSignup {
+        # ACTIVITY_NAME : String
+        ~ bpl : EditText
+        ~ bplvalidation : String
+        ~ dob : EditText
+        ~ dobvalidation : String
+        ~ emailvalidation : String
+        ~ female : RadioButton
+        ~ fullnamevalidation : String
+        ~ gen : String
+        ~ mail : EditText
+        ~ male : RadioButton
+        ~ mobile : EditText
+        ~ mobilevalidation : String
+        ~ name : EditText
+        ~ other : RadioButton
+        ~ pwd : EditText
+        ~ pwdvalidation : String
+        ~ re_pwd : EditText
+        ~ signinbtn : Button
+        + validateBpl()
+        + validateDob()
+        + validateMail()
+        + validateMobile()
+        + validateName()
+        + validatePwd()
+        # onCreate()
+        # onDestroy()
+        # onPause()
+        # onResume()
+        # onStart()
+        # onStop()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.Recipientrequests {
+        ~ accept : Button
+        ~ decline : Button
+        ~ listofrequests : Button
+        ~ verifyBPL : EditText
+        ~ viewreq : TextView
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.UploaditemFragment {
+        ~ imgupload : Button
+        ~ itemdetails : EditText
+        ~ itemsno : EditText
+        ~ itemtype : EditText
+        ~ itemtypevalidation : String
+        ~ mob : EditText
+        ~ mobilevalidation : String
+        ~ uploadbtn : Button
+        {static} - ACTIVITY_NAME : String
+        + onCreate()
+        + onCreateView()
+        + onViewCreated()
+        - validateItemType()
+        - validateMobile()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.database {
+        {static} - DATABASE_NAME : String
+        {static} - VERSION_NUM : int
+        + acceptitem()
+        + acceptngo()
+        + acceptrecipient()
+        + adselect()
+        + database()
+        + declinengo()
+        + declinerecipient()
+        + donselect()
+        + insertintoadmin()
+        + insertintodonor()
+        + insertintoitems()
+        + insertintongo()
+        + insertintorecipient()
+        + ngocontactvalidation()
+        + ngoidvalidation()
+        + ngoselect()
+        + ngosregistertocheckid()
+        + onCreate()
+        + onUpgrade()
+        + recbplvalidation()
+        + recipientvalidationfordonation()
+        + recselect()
+        + viewallitems()
+        + viewngolist()
+        + viewngoreq()
+        + viewrecipientreq()
+        + viewselecteditem()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.donorNgolist {
+        ~ contact : EditText
+        ~ listofngos : TextView
+        ~ pay : Button
+        ~ viewlist : Button
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.donormainpage {
+        ~ fm : FragmentManager
+        ~ fragment : Fragment
+        ~ ft : FragmentTransaction
+        + onCreateOptionsMenu()
+        + onOptionsItemSelected()
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.ngolistactivity {
+        ~ contact : EditText
+        ~ listofngos : TextView
+        ~ pay : Button
+        ~ viewlist : Button
+        # onCreate()
+    }
+  }
+  
+
+  namespace com.example.smileforme {
+    class com.example.smileforme.ngorequests {
+        ~ accept : Button
+        ~ decline : Button
+        ~ listofrequests : Button
+        ~ verifyid : EditText
+        ~ viewreq : TextView
+        # onCreate()
+    }
+  }
+  
+
+  com.example.smileforme.AboutusFragment -up-|> androidx.fragment.app.Fragment
+  com.example.smileforme.AdminLogin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.AdminLogin o-- com.example.smileforme.database : admindb
+  com.example.smileforme.Admindashboard -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.DonorDBFragment -up-|> androidx.fragment.app.Fragment
+  com.example.smileforme.DonorLogin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.DonorLogin o-- com.example.smileforme.database : donordb
+  com.example.smileforme.DonorSignUp -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.DonorSignUp o-- com.example.smileforme.database : donordb
+  com.example.smileforme.Items -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.Items o-- com.example.smileforme.database : itemdb
+  com.example.smileforme.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.Newjunioradmin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.Newjunioradmin o-- com.example.smileforme.database : admindb
+  com.example.smileforme.Ngologin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.Ngologin o-- com.example.smileforme.database : ngodb
+  com.example.smileforme.Ngoregistration -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.Ngoregistration o-- com.example.smileforme.database : ngodb
+  com.example.smileforme.RecipientLogin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.RecipientLogin o-- com.example.smileforme.database : recipientdb
+  com.example.smileforme.RecipientSignup -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.RecipientSignup o-- com.example.smileforme.database : recipientdb
+  com.example.smileforme.Recipientrequests -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.Recipientrequests o-- com.example.smileforme.database : recipientdb
+  com.example.smileforme.UploaditemFragment -up-|> androidx.fragment.app.Fragment
+  com.example.smileforme.UploaditemFragment o-- com.example.smileforme.database : itemsdb
+  com.example.smileforme.database -up-|> android.database.sqlite.SQLiteOpenHelper
+  com.example.smileforme.donorNgolist -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.donorNgolist o-- com.example.smileforme.database : ngodb
+  com.example.smileforme.donormainpage -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.ngolistactivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.ngolistactivity o-- com.example.smileforme.database : ngodb
+  com.example.smileforme.ngorequests -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.smileforme.ngorequests o-- com.example.smileforme.database : ngodb
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
