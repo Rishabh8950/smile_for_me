@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import android.widget.Button;
 
 public class DonorDBFragment extends Fragment {
 
+    private static final String ACTIVITY_NAME="DonorDBFragment.java";
     Button clothes,food,others,ngo;
     Fragment fragment;
     FragmentManager fm;
@@ -43,6 +45,7 @@ public class DonorDBFragment extends Fragment {
             public void onClick(View v) {
                 //Intent cloth = new Intent(getContext(), Uploaditem.class);
                 //startActivity(cloth);
+                Log.i(ACTIVITY_NAME,"clicked on clothes");
                 fragment = new UploaditemFragment();
                 fm = getFragmentManager();
                 ft = fm.beginTransaction();
@@ -55,6 +58,7 @@ public class DonorDBFragment extends Fragment {
             public void onClick(View v) {
                 //Intent food = new Intent(getContext(), Uploaditem.class);
                 //startActivity(food);
+                Log.i(ACTIVITY_NAME,"clicked on food");
                 fragment = new UploaditemFragment();
                 fm = getFragmentManager();
                 ft = fm.beginTransaction();
@@ -67,6 +71,7 @@ public class DonorDBFragment extends Fragment {
             public void onClick(View v) {
                 //Intent other = new Intent(getContext(), Uploaditem.class);
                 //startActivity(other);
+                Log.i(ACTIVITY_NAME,"clicked on others");
                 fragment = new UploaditemFragment();
                 fm = getFragmentManager();
                 ft = fm.beginTransaction();
@@ -77,13 +82,10 @@ public class DonorDBFragment extends Fragment {
         ngo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent ngo = new Intent(getContext(), ngolistactivity.class);
+                Log.i(ACTIVITY_NAME,"clicked on donate to ngo");
+                Intent ngo = new Intent(getContext(), donorNgolist.class);
                 startActivity(ngo);
-//                fragment = new NgolistFragment();
-//                fm = getFragmentManager();
-//                ft = fm.beginTransaction();
-//                ft.replace(R.id.donormain, fragment).addToBackStack(null);
-//                ft.commit();
+
             }
         });
     }

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,13 +16,14 @@ public class Items extends AppCompatActivity {
     TextView viewitems;
     Button accept,viewdetaill,openlist;
     database itemdb=null;
-
+    private static final String ACTIVITY_NAME = "Items.java";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_items);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         itemid=(EditText) findViewById(R.id.itemidverification);
         bpl=(EditText)findViewById(R.id.enterbplrec);
@@ -46,7 +48,7 @@ public class Items extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 itemdb.viewselecteditem(viewitems,bpl.getText().toString());
-
+                Log.i(ACTIVITY_NAME,"Clicked on view selected items button");
 
             }
         });

@@ -20,6 +20,8 @@ public class RecipientLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipient_login);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Log.i(ACTIVITY_NAME, "in onCreate()");
         user=(EditText)findViewById(R.id.unamerecipient);
         pwd=(EditText)findViewById(R.id.recipientpwdprompt);

@@ -23,6 +23,14 @@ public class RecipientSignup extends AppCompatActivity {
     RadioButton male,female,other;
     String gen;
 
+    String fullnamevalidation="^[A-Za-z]+\\s[A-Za-z]+$";
+    String dobvalidation="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$";
+    String emailvalidation="^[a-zA-Z0-9+_.-]+@[a-zA-Z]+[.][a-zA-Z]{2,}+$";
+    String mobilevalidation="^[89][0-9]{9}";
+    String pwdvalidation="^[0-9a-zA-Z]+$";
+    String bplvalidation="^[0-9]{10}";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -41,6 +49,7 @@ public class RecipientSignup extends AppCompatActivity {
         male=findViewById(R.id.rmale);
         female=findViewById(R.id.rfemale);
         other=findViewById(R.id.rother);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         if(male.isChecked())
         {
@@ -57,34 +66,27 @@ public class RecipientSignup extends AppCompatActivity {
         signinbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String fullnamevalidation="[a-zA-Z][a-zA-Z ]{2,}";
-                String dobvalidation="^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$";
-                String emailvalidation="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
-                String mobilevalidation="^[89][0-9]{9}";
-                String pwdvalidation="/^[a-z0-9]+$/i";
-
-                String bplvalidation="^[0-9]{10}";
-                if(!name.getText().toString().matches(fullnamevalidation))
+                if(!validateName(name.getText().toString()))
                 {
                     Toast.makeText(getApplicationContext(),"Invalid Name",Toast.LENGTH_LONG).show();
                 }
-                else if(!dob.getText().toString().matches(dobvalidation))
+                else if(!validateDob(dob.getText().toString()))
                 {
                     Toast.makeText(getApplicationContext(),"Invalid DOB",Toast.LENGTH_LONG).show();
                 }
-                else if(!mail.getText().toString().matches(emailvalidation))
+                else if(!validateMail(mail.getText().toString()))
                 {
                     Toast.makeText(getApplicationContext(),"Invalid EMAIL",Toast.LENGTH_LONG).show();
                 }
-                else if(!mobile.getText().toString().matches(mobilevalidation))
+                else if(!validateMobile(mobile.getText().toString()))
                 {
                     Toast.makeText(getApplicationContext(),"Invalid Contact Number",Toast.LENGTH_LONG).show();
                 }
-
-                else if(pwd.getText().toString().isEmpty() && !pwd.getText().toString().equals(pwdvalidation)) {
-                    Toast.makeText(getApplicationContext(), "Password can contain only alphabets and numbers", Toast.LENGTH_LONG).show();
+                else if(!validatePwd(pwd.getText().toString()) || !validatePwd(re_pwd.getText().toString()) )
+                {
+                    Toast.makeText(getApplicationContext(),"Password can contain only alphabets and numbers",Toast.LENGTH_LONG).show();
                 }
-                else if(!bpl.getText().toString().matches(bplvalidation))
+                else if(!validateBpl(bpl.getText().toString()) || recipientdb.recbplvalidation(bpl.getText().toString())==1)
                 {
                     Toast.makeText(getApplicationContext(),"Invalid BPL",Toast.LENGTH_LONG).show();
 
@@ -93,26 +95,19 @@ public class RecipientSignup extends AppCompatActivity {
                 {
                     Toast.makeText(getApplicationContext(),"Please select Gender",Toast.LENGTH_LONG).show();
                 }
-
-
-
-
-                else if(pwd.getText().toString().equals(re_pwd.getText().toString()))
+                else if(!pwd.getText().toString().equals(re_pwd.getText().toString()))
                 {
-
-
-                    recipientdb.insertintorecipient(name.getText().toString(),dob.getText().toString(),gen,mail.getText().toString(),mobile.getText().toString(),pwd.getText().toString(),bpl.getText().toString());
+                    Toast.makeText(getApplicationContext(),"Both Password should Match",Toast.LENGTH_LONG).show();
+                }
+                else {
+                    recipientdb.insertintorecipient(name.getText().toString(),dob.getText().toString(),gen,
+                            mail.getText().toString(),mobile.getText().toString(),pwd.getText().toString(),
+                            bpl.getText().toString());
                    Toast.makeText(getApplicationContext(),"Request generated. Please wait for 24 hours",Toast.LENGTH_LONG).show();
                     Intent main=new Intent(getApplicationContext(),MainActivity.class);
                     startActivity(main);
 
                 }
-                else
-                    Toast.makeText(getApplicationContext(),"Invalid Details",Toast.LENGTH_LONG).show();
-
-
-                
-
             }
         });
     }
@@ -146,6 +141,43 @@ public class RecipientSignup extends AppCompatActivity {
         super.onDestroy();
         Log.i(ACTIVITY_NAME, "In onDestroy()");
     }
+
+    public boolean validateName(String name) {
+        if(name.matches(fullnamevalidation))
+            return true;
+        else return false;
+    }
+
+    public boolean validateDob(String Dob) {
+        if(Dob.matches(dobvalidation))
+            return true;
+        else return false;
+    }
+
+    public boolean validateMail(String mail) {
+        if(mail.matches(emailvalidation))
+            return true;
+        else return false;
+    }
+
+    public boolean validateMobile(String mobile) {
+        if(mobile.matches(mobilevalidation))
+            return true;
+        else return false;
+    }
+
+    public boolean validatePwd(String pwd) {
+        if(pwd.matches(pwdvalidation))
+            return true;
+        else return false;
+    }
+
+    public boolean validateBpl(String bpl) {
+        if(bpl.matches(bplvalidation))
+            return true;
+        else return false;
+    }
+
 
 
 }

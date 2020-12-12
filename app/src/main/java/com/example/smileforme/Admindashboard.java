@@ -15,6 +15,8 @@ public class Admindashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admindashboard);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         newadminbtn=findViewById(R.id.addjunioradmin);
         recipientrequest=findViewById(R.id.recipientrequest);
 

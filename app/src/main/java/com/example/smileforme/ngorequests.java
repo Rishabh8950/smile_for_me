@@ -20,6 +20,8 @@ public class ngorequests extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ngorequests);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         verifyid=(EditText) findViewById(R.id.ngoverification);
         listofrequests=(Button) findViewById(R.id.ngorequestsbtn);
         accept=(Button)findViewById(R.id.ngoacceptbtn);

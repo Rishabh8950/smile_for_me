@@ -10,20 +10,20 @@
 
     <Button
         android:id="@+id/addjunioradmin"
-        android:text="New Junior Admin"
+        android:text="@string/junioradmin"
         android:layout_width="match_parent"
         android:layout_marginTop="100sp"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/recipientrequest"
-        android:text="Recipient Requests"
+        android:text="@string/recrequests"
         android:layout_width="match_parent"
         android:layout_marginTop="50sp"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/ngorequest"
-        android:text="NGO requests"
+        android:text="@string/ngorequests"
         android:layout_marginTop="50sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

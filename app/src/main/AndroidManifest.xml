@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.smileforme">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -15,22 +13,38 @@
         android:roundIcon="@mipmap/smile_donate_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".donormainpage"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".ngolistactivity" />
-        <activity android:name=".Ngoregistration" />
-        <activity android:name=".Ngologin" />
-        <activity android:name=".ngorequests" />
-        <activity android:name=".Recipientrequests" />
-        <activity android:name=".Items" />
-        <activity android:name=".Newjunioradmin" />
-        <activity android:name=".RecipientSignup" />
-        <activity android:name=".RecipientLogin" />
-        <activity android:name=".data.DonorSignUp" />
-        <activity android:name=".DonorLogin" />
-        <activity android:name=".AdminLogin" />
-        <activity android:name=".Admindashboard" />
+        <activity
+            android:name=".donormainpage"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".donorNgolist"
+            android:parentActivityName=".donormainpage"></activity>
+        <activity android:name=".ngolistactivity"
+            android:parentActivityName=".Ngologin"/>
+        <activity android:name=".Ngoregistration"
+            android:parentActivityName=".Ngologin"/>
+        <activity android:name=".Ngologin"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ngorequests"
+            android:parentActivityName=".Admindashboard"/>
+        <activity android:name=".Recipientrequests"
+            android:parentActivityName=".Admindashboard"/>
+        <activity android:name=".Items"
+            android:parentActivityName=".RecipientLogin"/>
+        <activity android:name=".Newjunioradmin"
+            android:parentActivityName=".Admindashboard"/>
+        <activity android:name=".RecipientSignup"
+            android:parentActivityName=".RecipientLogin"/>
+        <activity android:name=".RecipientLogin"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DonorSignUp"
+            android:parentActivityName=".DonorLogin"/>
+        <activity android:name=".DonorLogin"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AdminLogin"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Admindashboard"
+            android:parentActivityName=".AdminLogin"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,14 +20,19 @@ import java.io.IOException;
 
 public class UploaditemFragment extends Fragment {
 
-    private static final String TEMP_IMAGE ="" ;
+    private static final String ACTIVITY_NAME="UploaditemFragment.java";
     EditText mob,itemtype,itemdetails,itemsno;
     database itemsdb=null;
     Button uploadbtn,imgupload;
 
+    String mobilevalidation="^[89][0-9]{9}";
+    String itemtypevalidation="^[A-Za-z]+$";
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.i(ACTIVITY_NAME,"in oncreate()");
     }
 
     @Override
@@ -41,8 +47,8 @@ public class UploaditemFragment extends Fragment {
         uploadbtn = view.findViewById(R.id.uploaditembtn);
         itemdetails = view.findViewById(R.id.enterproductdetails);
         itemtype = view.findViewById(R.id.enterproducttype);
-        imgupload = view.findViewById(R.id.imgupload);
-        itemsno = view.findViewById(R.id.enteritemsno);
+       // imgupload = view.findViewById(R.id.imgupload);
+        itemsno = view.findViewById(R.id.itemcount);
 
         itemsdb = new database(getContext());
 
@@ -66,20 +72,47 @@ public class UploaditemFragment extends Fragment {
 
             }
         }); */
-
+        Log.i(ACTIVITY_NAME,"in onViewCreated()");
 
         uploadbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemsdb.insertintoitems(itemtype.getText().toString(), itemdetails.getText().toString(), mob.getText().toString(),
-                        Integer.parseInt(itemsno.getText().toString()));
+                Log.i(ACTIVITY_NAME,"clicked on upload item");
+                if(!validateMobile(mob.getText().toString()))
+                {
+                    Toast.makeText(getContext(),"Invalid Contact Number",Toast.LENGTH_LONG).show();
+                }
+                else if(itemtype.equals(null) || !validateItemType(itemtype.getText().toString()))
+                {
+                    Toast.makeText(getContext(),"Invalid Item Type",Toast.LENGTH_LONG).show();
+                }
+                else if(itemdetails.equals(null))
+                {
+                    Toast.makeText(getContext(),"Please Enter Item Details",Toast.LENGTH_LONG).show();
+                }
+                else {
+                    itemsdb.insertintoitems(itemtype.getText().toString(), itemdetails.getText().toString(), Integer.parseInt(itemsno.getText().toString()),
+                            mob.getText().toString());
                 Toast.makeText(getContext(),"Item uploaded",Toast.LENGTH_LONG).show();
                 Intent home=new Intent(getContext(),donormainpage.class);
                 startActivity(home);
+                }
             }
         });
 
 
     }
 
-}
+    private boolean validateMobile(String mobile) {
+            if(mobile.matches(mobilevalidation))
+                return true;
+            else return false;
+        }
+        private boolean validateItemType(String itemType) {
+            if(itemType.matches(itemtypevalidation))
+                return true;
+            else return false;
+        }
+
+
+    }

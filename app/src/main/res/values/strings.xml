@@ -11,7 +11,6 @@
     <string name="namehint">Email/Mobile No.</string>
     <string name="password">Password</string>
     <string name="loginbtn">LOGIN</string>
-    <string name="otpbox">Login with OTP</string>
     <string name="newdonorlogin">New Donor?</string>
     <string name="newrecipientlog">New Recipient?</string>
     <string name="signuprec">SIGN UP</string>
@@ -21,7 +20,6 @@
 
     <string name="signup">SIGN UP</string>
     <string name="fullname">Full Name</string>
-    <string name="fnamehint">Name</string>
     <string name="dob">Date of Birth</string>
     <string name="dobhint">10/05/1999</string>
     <string name="gender">Gender</string>
@@ -29,8 +27,8 @@
     <string name="female">Female</string>
     <string name="other">Others</string>
     <string name="email">Email</string>
-    <string name="emailhint">name123@mail.com</string>
     <string name="dnamehint">John Doe</string>
+    <string name="emailhint">name123@mail.com</string>
     <string name="mobile">Mobile No.</string>
     <string name="mobhint">854796582</string>
     <string name="enterpwd">Re-enter Password</string>
@@ -41,6 +39,7 @@
 
     <string name="Verificationrequests">Requests for BPL Verification</string>
 
+    <string name="donatengo">Donate to NGO</string>
     <string name="enteremail">EMAIL</string>
     <string name="ngoid">10-Digit ID</string>
     <string name="ngoregistration">New NGO Registration?</string>
@@ -56,10 +55,8 @@
     <string name="detailsofproduct">Details of Item</string>
     <string name="producttype">Type of Item</string>
     <string name="productdetails">Details of Item</string>
-    <string name="productimg">Image of Item</string>
-    <string name="uploaditem">Upload Item</string>
     <string name="clothes">Clothes</string>
-    <string name="img">Upload Image</string>
+    <string name="uploaditem">Upload Item</string>
     <string name="viewngorqst">View NGO Requests</string>
     <string name="iditem">ID</string>
     <string name="viewitems">View Items</string>
@@ -70,7 +67,9 @@
     <string name="Donate">Donate</string>
     <string name="ngolist">View NGO List</string>
 
-
+    <string name="junioradmin">New Junior Admin</string>
+    <string name="recrequests">Recipient Requests</string>
+    <string name="ngorequests">NGO requests</string>
     <string name="save">SAVE</string>
     <string name="donormain">What do you want to donate today?</string>
     <string name="food">Food</string>
@@ -83,7 +82,6 @@
     <string name="feedbackform">Please share your experience!!</string>
     <string name="feedbackdetails">Let us know how can we \n improve ourselves</string>
     <string name="submit">Submit</string>
-    <string name="feedbacksubmit">Feedback Submitted</string>
     <string name="cancel">Cancel</string>
 
     <string name="about"> <b>About SmileForMe</b> \n
@@ -141,6 +139,5 @@ Ramya Shree Tatikonda \n
 Rishabh Garg \n
     </string>
     <string name="logout">Log Out</string>
-    <string name="listofngo">Choose an NGO to donate :</string>
 
 </resources>

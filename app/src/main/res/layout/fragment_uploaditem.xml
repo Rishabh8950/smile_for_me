@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#4BD18BDD"
-    tools:context=".Uploaditem">
+    tools:context=".UploaditemFragment">
 
 
     <TextView
@@ -56,6 +56,31 @@
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         />
+
+    <TextView
+        android:id="@+id/itemno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:text="@string/noofproduct"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/itemcount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:textSize="25dp"
+        android:hint="@string/noofproduct"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
     <TextView
         android:id="@+id/contactno"
         android:layout_marginTop="30dp"
@@ -70,7 +95,7 @@
         android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/entermobile"
+        android:id="@+id/dphone"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

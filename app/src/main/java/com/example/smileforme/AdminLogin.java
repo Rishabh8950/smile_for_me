@@ -21,6 +21,8 @@ public class AdminLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_login);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Log.i(ACTIVITY_NAME,"in onCreate()");
         username=(EditText)findViewById(R.id.unameadm);
         pwd=(EditText)findViewById(R.id.admpwdprompt);

@@ -90,8 +90,8 @@ public class donormainpage extends AppCompatActivity {
                 break;
 
             case R.id.action_five:
-                Intent ngolist = new Intent(donormainpage.this, ngolistactivity.class);
-                startActivity(ngolist);
+                Intent logout = new Intent(donormainpage.this, MainActivity.class);
+                startActivity(logout);
                 break;
         }
         return true;

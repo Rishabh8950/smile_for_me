@@ -1,140 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SmileForME</string>
+    <string name="app_name">स्माइलफॉर्मेम</string>
 
-    <string name="btndonor">DONOR</string>
-    <string name="btnngo">NGO</string>
-    <string name="btnrecipient">RECIPIENT</string>
-    <string name="btnadmin">ADMIN</string>
-    <string name="bpl">BPL card Number</string>
-    <string name="enterbpl">10-digit BPL Number</string>
+    <string name="btndonor">दाता</string>
+    <string name="btnngo">गैर सरकारी संगठन</string>
+    <string name="btnrecipient">प्राप्‍तकर्ता</string>
+    <string name="btnadmin">व्यवस्थापक</string>
+    <string name="bpl">बीपीएल कार्ड नंबर</string>
+    <string name="enterbpl">10 अंकों का बीपीएल नंबर</string>
 
-
-    <string name="uname">USERNAME</string>
-    <string name="namehint">Email/Mobile No.</string>
-    <string name="password">PASSWORD</string>
-    <string name="loginbtn">LOGIN</string>
-    <string name="otpbox">Login with OTP</string>
-    <string name="newdonorlogin">New Donor?</string>
-    <string name="newrecipientlog">New Recipient?</string>
-    <string name="signuprec">SIGN UP</string>
-    <string name="signup">SIGN UP</string>
-    <string name="fullname">Full Name</string>
-    <string name="fnamehint">Name</string>
-    <string name="dob">Date of Birth</string>
+    <string name="dnamehint">जॉन डाबी</string>
+    <string name="uname">उपयोगकर्ता नाम</string>
+    <string name="namehint">ईमेल/मोबाइल नं.</string>
+    <string name="password">पासवर्ड</string>
+    <string name="loginbtn">लॉगिन</string>
+    <string name="newdonorlogin">नया दाता?</string>
+    <string name="newrecipientlog">नया प्राप्तकर्ता?</string>
+    <string name="signuprec">नाम लिखो</string>
+    <string name="signup">नाम लिखो</string>
+    <string name="fullname">पूरा नाम</string>
+    <string name="dob">जन्म तिथि</string>
     <string name="dobhint">10/05/1999</string>
-    <string name="gender">Gender</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-    <string name="other">Others</string>
-    <string name="email">Email</string>
+    <string name="gender">लिंग</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="other">दूसरों</string>
+    <string name="email">ईमेल</string>
     <string name="emailhint">name123@mail.com</string>
-    <string name="dnamehint">Name</string>
-    <string name="mobile">Mobile No.</string>
+    <string name="mobile">मोबाइल नं.</string>
     <string name="mobhint">854796582</string>
-    <string name="enterpwd">Re-enter Password</string>
-    <string name="signin">SIGN IN</string>
-    <string name="save">SAVE</string>
-    <string name="confirmpwd">CONFIRM PASSWORD</string>
-    <string name="enteremail">EMAIL</string>
-    <string name="reenterpwd">Re-enter Password</string>
-    <string name="accept">Accept</string>
-    <string name="decline">Decline</string>
-    <string name="ngoid">10-Digit ID</string>
-    <string name="ngoregistration">New NGO Registration?</string>
-    <string name="Verificationrequests">Verification Requests</string>
-    <string name="ngoid2">NGO ID</string>
-    <string name="register">NGO Registration</string>
-    <string name="ngoname">NGO Name</string>
-    <string name="ngotype">Type of NGO</string>
-    <string name="ngotype2">NGO type</string>
-    <string name="mobile2">Number linked with Bank Account</string>
-    <string name="ngodetails">NGO Details</string>
-    <string name="ngodetails2">Details of NGO</string>
-    <string name="detailsofproduct">Details of Item</string>
-    <string name="producttype">Type of Item</string>
-    <string name="productdetails">Details of Item</string>
-    <string name="productimg">Item of Image</string>
-    <string name="uploaditem">Upload Item</string>
-    <string name="clothes">Clothes</string>
-    <string name="img">Upload Image</string>
-    <string name="viewngorqst">View NGO Requests</string>
-    <string name="iditem">ID</string>
-    <string name="viewitems">View Items</string>
-    <string name="selecteditem">View selected item</string>
-    <string name="noteforbpl">Note:Just enter BPL to view selected item</string>
-    <string name="fordonoronly">For Donors:</string>
-    <string name="ngonumber">NGO number Linked with account</string>
-    <string name="Donate">Donate</string>
-    <string name="ngolist">View NGO List</string>
-    <string name="donormain">What do you want to donate today?</string>
-    <string name="food">Food</string>
-    <string name="others">Others</string>
-    <string name="noofproduct">Number of Items</string>
-    <string name="donationlist">My Donations</string>
-    <string name="aboutus">About Us</string>
-    <string name="home">Home Page</string>
-    <string name="feedback">Feedback</string>
-    <string name="feedbackform">Please share your experience!!</string>
-    <string name="feedbackdetails">Let us know what you liked about us</string>
-    <string name="submit">Submit</string>
-    <string name="feedbacksubmit">Feedback Submitted</string>
-    <string name="cancel">Cancel</string>
+    <string name="enterpwd">पासवर्ड फिर से दर्ज करें</string>
+    <string name="signin">साइन इन करें</string>
+    <string name="save">सहेजें</string>
+    <string name="confirmpwd">पासवर्ड की पुष्टि करें</string>
+    <string name="enteremail">ईमेल</string>
+    <string name="reenterpwd">पासवर्ड फिर से दर्ज करें</string>
+    <string name="accept">स्वीकार करना</string>
+    <string name="decline">गिरावट</string>
+    <string name="ngoid">10 अंकों की आईडी</string>
+    <string name="ngoregistration">नया एनजीओ पंजीकरण?</string>
+    <string name="Verificationrequests">सत्यापन अनुरोध</string>
+    <string name="ngoid2">एनजीओ आईडी</string>
+    <string name="register">एनजीओ पंजीकरण</string>
 
-    <string name="about"> <b>About SmileForMe</b> <br /> <br />
-        SmileForMe is a public platform to give and receive charities.
-The app is a noble initiative which makes providing donations and receiving donations much easier.
-<br /> <br />
-Anyone who wants donate things like furniture, clothes, footwear, books, food etc can use this app.
-This app can also be used to make large scale donations to charity organisations like NGOs.<br />
-<br />
-SmileForMe can be used by people who have a Below poverty line card for receiving donations. And NGOs can use
-this app to register and receive donations.
-<br /><br />
-"One person can\'t help all. But all can help all."
-<br /><br />
-Let\'s use SmileForMe and spread smiles all around.
-<br /><br />
-How it Works
-<br /><br />
-For Donors<br />
-Step 1: Register with SmileForMe
-<br /><br />
-Step 2: Choose what you want to donate
-<br /><br />
-Step 3: You also have an option to remove any items uploaded for donations
-<br /><br />
-For Recipient<br />
-Step 1: Register with SmileForMe
-<br /><br />
-Step 2: Wait to be approved by admin
-<br /><br />
-Step 3: Check what items are available for donation
-<br /><br />
-Step 4: Choose the item you want
-<br /><br />
-Step 5: Wait for the donation to be approved by admin
-<br /><br />
-For NGO<br />
-Step 1: Register with SmileForMe
-<br /><br />
-Step 2: Wait to be approved by admin
-<br /><br />
-Step 3: Create your profile and wait for donations
-<br /><br />
-Step 4: When someone donates then the money will be credited to the NGO\'s bank account.
-<br /><br />
-Important Notes:<br /><br />
+    <string name="junioradmin">नई जूनियर एडमिन</string>
+    <string name="recrequests">प्राप्तकर्ता अनुरोध</string>
+    <string name="ngorequests">गैर सरकारी संगठन अनुरोध</string>
+    <string name="donatengo">आइटम अपलोड करें</string>
+    <string name="ngoname">एनजीओ का नाम</string>
+    <string name="ngotype">एनजीओ का प्रकार</string>
+    <string name="ngotype2">गैर सरकारी संगठन प्रकार</string>
+    <string name="mobile2">बैंक खाते से जुड़ा नंबर</string>
+    <string name="ngodetails">एनजीओ विवरण</string>
+    <string name="ngodetails2">एनजीओ का विवरण</string>
+    <string name="detailsofproduct">आइटम का विवरण</string>
+    <string name="producttype">आइटम का प्रकार</string>
+    <string name="productdetails">आइटम का विवरण</string>
+    <string name="clothes">कोट आदि</string>
+    <string name="viewngorqst">देखें एनजीओ अनुरोध</string>
+    <string name="iditem">परिचय</string>
+    <string name="viewitems">आइटम देखें</string>
+    <string name="selecteditem">चयनित आइटम देखें</string>
+    <string name="noteforbpl">नोट:चयनित आइटम देखने के लिए सिर्फ बीपीएल दर्ज करें</string>
+    <string name="fordonoronly">दानदाताओं के लिए:</string>
+    <string name="ngonumber">एनजीओ नंबर खाते से जुड़ा</string>
+    <string name="Donate">दान करना</string>
+    <string name="uploaditem">आइटम अपलोड करें</string>
+    <string name="ngolist">देखें एनजीओ की सूची</string>
+    <string name="donormain">आज आप क्या दान करना चाहते हैं?</string>
+    <string name="food">आज आप क्या दान करना चाहते हैं?</string>
+    <string name="others">दूसरों</string>
+    <string name="noofproduct">मदों की संख्या</string>
+    <string name="donationlist">मुस्कान इकट्ठे हुए</string>
+    <string name="aboutus">हमारे बारे में</string>
+    <string name="home">होम पेज</string>
+    <string name="feedback">प्रतिपुष्टि</string>
+    <string name="feedbackform">कृपया अपने अनुभव साझा करें!!</string>
+    <string name="feedbackdetails">हमें पता है कि हम कैसे कर सकते है \n अपने आप को सुधार</string>
+    <string name="submit">जमा करें</string>
+    <string name="cancel">रद्द करना</string>
 
-SmileForMe doesn\'t work inter-city or state. You can give or accept donations if you belong to the same village,
-town, or city.
-<br /><br />
-Version 1.0
-<br /><br />
-Created by -<br />
-Ramya Shree Tatikonda<br />
-Rishabh Garg</string>
-    <string name="logout">Log Out</string>
-    <string name="listofngo">Choose an NGO to donate :</string>
-
+    <string name="about"> <b>SmileForMe</b> के बारे में \n
+        \n स्माइलफॉर्मे दान देने और प्राप्त करने के लिए एक सार्वजनिक मंच है।
+        ऐप एक महान पहल है जो दान प्रदान करती है और दान प्राप्त करना बहुत आसान बनाती है। \n
+        \n जो कोई भी फर्नीचर, कपड़े, जूते, किताबें, भोजन आदि जैसी चीजें दान करना चाहता है,
+        वह इस ऐप का उपयोग कर सकता है। इस ऐप का इस्तेमाल एनजीओ जैसे चैरिटी संगठनों को बड़े
+        पैमाने पर डोनेशन देने के लिए भी किया जा सकता है। \n
+        \n SmileForMe का उपयोग उन लोगों द्वारा किया जा सकता है जिनके पास दान प्राप्त करने के लिए
+        गरीबी रेखा से नीचे कार्ड है। और गैर सरकारी संगठन इस ऐप का उपयोग पंजीकरण और दान प्राप्त करने के लिए कर सकते हैं। \n
+        \n "एक व्यक्ति सभी की मदद नहीं कर सकता। लेकिन सभी सभी की मदद कर सकते हैं । \n \n
+        चलो स्माइलफॉर्मे का उपयोग करें और चारों ओर मुस्कान फैलाएं । \n
+        \n यह कैसे काम करता है
+        \n \n दाताओं के लिए \n
+        Step 1: के साथ रजिस्टर SmileForMe
+        \n Step 2 के साथ रजिस्टर करें: चुनें कि आप क्या दान के लिए दान करना चाहते हैं
+        \n Step 3: आपके पास दान के लिए अपलोड की गई किसी भी वस्तु को हटाने का विकल्प है
+        \n एन प्राप्तकर्ता के लिए
+        \n Step 1: के साथ रजिस्टर SmileForMe
+        \n Step 2: व्यवस्थापक द्वारा अनुमोदित किए जाने के लिए प्रतीक्षा करें
+        \n Step 3: चेक करें कि दान के लिए कौन सी वस्तुएं उपलब्ध हैं \n
+        Step 4: उस आइटम को चुनें जो आप चाहते हैं \n
+        Step 5: दान के लिए प्रतीक्षा करें व्यवस्थापक द्वारा अनुमोदित किया जाए \n
+        Step 1: स्माइलफॉर्मे के साथ रजिस्टर करें \n
+        Step 2: व्यवस्थापक द्वारा अनुमोदित होने का इंतजार करें \n
+        Step 3: अपना प्रोफाइल बनाएं और दान की प्रतीक्षा करें \n
+        Step 4 : जब कोई दान करता है तो पैसा गैर सरकारी संगठन के बैंक खाते में जमा किया जाएगा \n \n
+        \n
+    \n महत्वपूर्ण नोट्स:
+        \n SmileForMe अंतर शहर या राज्य काम नहीं करता है । यदि आप एक ही गांव, शहर या शहर के हैं तो आप दान दे सकते हैं या
+        स्वीकार कर सकते हैं। \n
+        संस्करण 1.0
+        \n द्वारा बनाया गया -
+        \n रम्या श्री टाटीकोंडा
+        \n ऋषभ गर्ग \n</string>
+    <string name="logout">लॉग आउट करें</string>
 </resources>

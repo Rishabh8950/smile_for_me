@@ -21,6 +21,8 @@ public class Recipientrequests extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipientrequests);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         recipientdb=new database(this);
         verifyBPL=(EditText) findViewById(R.id.bplverification);
         listofrequests=(Button) findViewById(R.id.recipientrequestsbtn);

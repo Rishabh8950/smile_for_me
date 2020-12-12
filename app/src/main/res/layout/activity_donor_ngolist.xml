@@ -6,7 +6,40 @@
     android:layout_height="match_parent"
     android:background="#4BD18BDD"
     android:orientation="vertical"
-    tools:context=".ngolistactivity">
+    tools:context=".donorNgolist">
+
+    <TextView
+        android:id="@+id/fordonor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="50dp"
+        android:text="@string/fordonoronly"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <EditText
+        android:id="@+id/ngonumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="@string/ngonumber"
+        android:textSize="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/ngopaybtn"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Donate"/>
+
 
 
     <Button
@@ -17,9 +50,13 @@
         android:height="50dp"
         android:text="@string/ngolist"
         android:textStyle="bold"
+
         android:textSize="20dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp" />
+
+
+
 
     <TextView
         android:layout_marginTop="10dp"

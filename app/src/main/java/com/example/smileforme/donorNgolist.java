@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ngolistactivity extends AppCompatActivity {
+public class donorNgolist extends AppCompatActivity {
     EditText contact;
     TextView listofngos;
     Button pay,viewlist;
@@ -20,11 +20,11 @@ public class ngolistactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ngolist);
+        setContentView(R.layout.activity_donor_ngolist);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-//        contact=(EditText)findViewById(R.id.ngonumber);
-//        pay=(Button)findViewById(R.id.ngopaybtn);
+        contact=(EditText)findViewById(R.id.ngonumber);
+        pay=(Button)findViewById(R.id.ngopaybtn);
         viewlist=(Button)findViewById(R.id.ngolistbtn);
         ngodb= new database(this);
         listofngos=(TextView)findViewById(R.id.ngolist);
@@ -36,23 +36,23 @@ public class ngolistactivity extends AppCompatActivity {
 
             }
         });
-//        pay.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(ngodb.ngocontactvalidation(contact.getText().toString())==1)
-//                {
-//                    String url="http://m.p-y.tm";
-//
-//
-//
-//                    Intent pay=new Intent(Intent.ACTION_VIEW);
-//                    pay.setData(Uri.parse(url));
-//                    startActivity(pay);
-//                }
-//                else
-//                    Toast.makeText(getApplicationContext(),"Check Number",Toast.LENGTH_LONG).show();
-//            }
-//        });
+        pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ngodb.ngocontactvalidation(contact.getText().toString())==1)
+                {
+                    String url="http://m.p-y.tm";
+
+
+
+                    Intent pay=new Intent(Intent.ACTION_VIEW);
+                    pay.setData(Uri.parse(url));
+                    startActivity(pay);
+                }
+                else
+                    Toast.makeText(getApplicationContext(),"Check Number",Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
 }

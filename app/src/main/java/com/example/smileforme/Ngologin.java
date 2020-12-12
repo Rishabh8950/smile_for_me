@@ -18,6 +18,8 @@ public class Ngologin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ngologin);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         mail=(EditText)findViewById(R.id.writengoid);
         pwd=(EditText)findViewById(R.id.writengopwd);
         login=(Button)findViewById(R.id.ngologin);

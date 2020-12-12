@@ -21,6 +21,8 @@ public class Newjunioradmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newjunioradmin);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         uname=findViewById(R.id.unameadmin);
         pwd=findViewById(R.id.newadminpwdprompt);
         savebtn=findViewById(R.id.addadmin);
